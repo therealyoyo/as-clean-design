@@ -6,7 +6,7 @@ import { CalendarCheck, ShieldCheck, Sparkles, BadgeCheck } from "lucide-react";
 const badges = [
   {
     icon: <CalendarCheck className="h-5 w-5 text-accent" />,
-    label: "On s'adapte à vous",
+    label: "Flexibilité Totale",
     sub: "Toujours disponible, 7j/7",
   },
   {
@@ -16,12 +16,12 @@ const badges = [
   },
   {
     icon: <Sparkles className="h-5 w-5 text-accent" />,
-    label: "Votre satisfaction, assurée",
+    label: "Qualité Garantie",
     sub: "Notre priorité à chaque intervention",
   },
   {
     icon: <BadgeCheck className="h-5 w-5 text-accent" />,
-    label: "Devis gratuit",
+    label: "Devis Gratuit & Rapide",
     sub: "Réponse sous 24h, sans engagement",
   },
 ];
