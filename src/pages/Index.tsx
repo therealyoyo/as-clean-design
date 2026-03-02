@@ -3,15 +3,13 @@
  * Sections: Hero, Trust bar, Services grid, How it works, Testimonials, Coverage, CTA banner
  */
 import { Link } from "react-router-dom";
-import { Home, Building2, Briefcase, Sparkles, Layers, ClipboardList, CalendarCheck, CheckCircle, Star } from "lucide-react";
+import { Home, Building2, Briefcase, Sparkles, Layers, ClipboardList, CalendarCheck, CheckCircle, Star, MapPin } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { serviceCategories } from "@/data/services";
-import { brusselsCommunes } from "@/data/communes";
 import HeroSection from "@/components/sections/HeroSection";
 import TrustBar from "@/components/sections/TrustBar";
 import CTABanner from "@/components/sections/CTABanner";
-import { Badge } from "@/components/ui/badge";
 
 // Map category icon names to components
 const iconMap: Record<string, React.ElementType> = {
@@ -164,21 +162,29 @@ export default function Index() {
       <section className="section-padding bg-secondary">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-primary mb-6">Zones desservies</h2>
-          <p className="text-muted-foreground mb-8">Nous intervenons dans les 19 communes de Bruxelles et en périphérie.</p>
-          <div className="flex flex-wrap justify-center gap-2">
-            {brusselsCommunes.map((commune) =>
-            <Badge key={commune} variant="secondary" className="text-sm px-3 py-1">
-                {commune}
-              </Badge>
-            )}
-            <Link to="/zones#peripherie">
-              <Badge className="bg-accent text-accent-foreground text-sm px-3 py-1 cursor-pointer hover:bg-accent/80">
-                et périphérie
-              </Badge>
-            </Link>
+          <p className="text-muted-foreground mb-8">
+            Nous intervenons à Bruxelles et dans le Brabant Wallon.
+          </p>
+          <div className="flex justify-center gap-8">
+            <div className="flex items-center gap-3">
+              <MapPin className="h-6 w-6 text-accent shrink-0" />
+              <div className="text-left">
+                <p className="font-semibold text-primary">Bruxelles</p>
+                <p className="text-sm text-muted-foreground">19 communes</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-3">
+              <MapPin className="h-6 w-6 text-accent shrink-0" />
+              <div className="text-left">
+                <p className="font-semibold text-primary">Brabant Wallon</p>
+                <p className="text-sm text-muted-foreground">et périphérie</p>
+              </div>
+            </div>
           </div>
-          <Link to="/zones" className="inline-block mt-6 text-sm text-accent hover:underline">
-            Voir toutes les zones →
+          <Link to="/zones">
+            <Button variant="outline" className="mt-6 rounded-full border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+              En savoir plus sur nos zones
+            </Button>
           </Link>
         </div>
       </section>
