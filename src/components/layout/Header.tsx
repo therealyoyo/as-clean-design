@@ -12,7 +12,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 const navItems = [
   { label: "Accueil", path: "/" },
   { label: "Services", path: "/services", hasMega: true },
-  { label: "Tarifs", path: "/tarifs" },
+  
   { label: "À propos", path: "/a-propos" },
   { label: "FAQ", path: "/faq" },
   { label: "Contact", path: "/contact" },

@@ -18,12 +18,14 @@ import HeroSection from "@/components/sections/HeroSection";
 const allServices = getAllServices();
 
 const formSchema = z.object({
+  prenom: z.string().min(2, "Ce champ est requis (min. 2 caractères)"),
   nom: z.string().min(2, "Ce champ est requis (min. 2 caractères)"),
   email: z.string().email("Email invalide"),
   telephone: z.string().min(9, "Numéro invalide (min. 9 chiffres)"),
   service: z.string().min(1, "Ce champ est requis"),
-  adresse: z.string().min(1, "Ce champ est requis"),
-  date: z.string().optional(),
+  rue: z.string().min(1, "Ce champ est requis"),
+  ville: z.string().min(1, "Ce champ est requis"),
+  codePostal: z.string().min(4, "Code postal invalide"),
   message: z.string().optional(),
 });
 
@@ -36,12 +38,14 @@ export default function Contact() {
     resolver: zodResolver(formSchema),
     mode: "onBlur",
     defaultValues: {
+      prenom: "",
       nom: "",
       email: "",
       telephone: "",
       service: "",
-      adresse: "",
-      date: "",
+      rue: "",
+      ville: "",
+      codePostal: "",
       message: "",
     },
   });
@@ -76,19 +80,35 @@ export default function Contact() {
               ) : (
                 <Form {...form}>
                   <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
-                    <FormField
-                      control={form.control}
-                      name="nom"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>Nom complet *</FormLabel>
-                          <FormControl>
-                            <Input placeholder="Votre nom complet" {...field} />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
+                    {/* Prénom + Nom side by side */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                      <FormField
+                        control={form.control}
+                        name="prenom"
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormLabel>Prénom *</FormLabel>
+                            <FormControl>
+                              <Input placeholder="Votre prénom" {...field} />
+                            </FormControl>
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
+                      <FormField
+                        control={form.control}
+                        name="nom"
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormLabel>Nom *</FormLabel>
+                            <FormControl>
+                              <Input placeholder="Votre nom" {...field} />
+                            </FormControl>
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
+                    </div>
 
                     <FormField
                       control={form.control}
@@ -146,33 +166,53 @@ export default function Contact() {
                       )}
                     />
 
-                    <FormField
-                      control={form.control}
-                      name="adresse"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>Adresse *</FormLabel>
-                          <FormControl>
-                            <Input placeholder="Votre adresse à Bruxelles" {...field} />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
+                    {/* Adresse de prestation */}
+                    <div className="space-y-4">
+                      <p className="text-sm font-medium text-foreground mb-2">Adresse de prestation</p>
 
-                    <FormField
-                      control={form.control}
-                      name="date"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>Date souhaitée</FormLabel>
-                          <FormControl>
-                            <Input type="date" {...field} />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
+                      <FormField
+                        control={form.control}
+                        name="rue"
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormLabel>Rue et numéro *</FormLabel>
+                            <FormControl>
+                              <Input placeholder="Ex: Rue de la Loi 42" {...field} />
+                            </FormControl>
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
+
+                      <div className="grid grid-cols-2 gap-4">
+                        <FormField
+                          control={form.control}
+                          name="ville"
+                          render={({ field }) => (
+                            <FormItem>
+                              <FormLabel>Ville *</FormLabel>
+                              <FormControl>
+                                <Input placeholder="Bruxelles" {...field} />
+                              </FormControl>
+                              <FormMessage />
+                            </FormItem>
+                          )}
+                        />
+                        <FormField
+                          control={form.control}
+                          name="codePostal"
+                          render={({ field }) => (
+                            <FormItem>
+                              <FormLabel>Code postal *</FormLabel>
+                              <FormControl>
+                                <Input placeholder="1000" {...field} />
+                              </FormControl>
+                              <FormMessage />
+                            </FormItem>
+                          )}
+                        />
+                      </div>
+                    </div>
 
                     <FormField
                       control={form.control}
@@ -181,7 +221,7 @@ export default function Contact() {
                         <FormItem>
                           <FormLabel>Message</FormLabel>
                           <FormControl>
-                            <Textarea placeholder="Décrivez vos besoins..." rows={4} {...field} />
+                            <Textarea placeholder="Décrivez vos besoins ou questions..." rows={4} {...field} />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
