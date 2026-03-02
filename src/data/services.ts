@@ -251,7 +251,7 @@ export const serviceContents: ServiceContent[] = [
       { question: "Quelle est la fréquence recommandée ?", answer: "Pour un logement standard, un lavage tous les 3 à 4 mois est idéal. En zone urbaine bruxelloise (pollution, chantiers proches), un passage tous les 2 mois peut être préférable." },
       { question: "Travaillez-vous par mauvais temps ?", answer: "La pluie fine ou le ciel couvert n'empêche pas le travail. En cas de forte pluie ou de vent important, nous reportons pour garantir la qualité du résultat." },
     ],
-    ctaText: "Vitres ternes ? Demandez votre devis — on intervient dans toute la région bruxelloise.",
+    ctaText: "Vitres ternes ? Demandez votre devis, on intervient dans toute la région bruxelloise et environs",
   },
 ];
 
