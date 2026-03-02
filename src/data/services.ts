@@ -230,7 +230,7 @@ export const serviceContents: ServiceContent[] = [
   {
     slug: "lavage-vitres",
     heroTitle: "Lavage de vitres à domicile",
-    heroSubtitle: "Des vitres impeccables, sans traces, intérieur comme extérieur — par des professionnels.",
+    heroSubtitle: "Des vitres impeccables, sans traces, intérieur comme extérieur par des professionnels.",
     intro: "Des vitres propres changent tout à la luminosité d'un intérieur. Mais le lavage de vitres prend du temps, demande du matériel adapté et peut être risqué en hauteur. Nos équipes interviennent chez vous à Bruxelles pour un résultat sans traces, sur tous types de vitrages — fenêtres classiques, baies vitrées, velux, véranda ou double vitrage.",
     inclusions: [
       "Lavage intérieur et extérieur de toutes les fenêtres",
