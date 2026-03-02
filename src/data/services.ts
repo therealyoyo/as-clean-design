@@ -171,7 +171,7 @@ export const serviceContents: ServiceContent[] = [
       { title: "Zéro stress supplémentaire", description: "Le déménagement est déjà une étape chargée. Confiez-nous le nettoyage et concentrez-vous sur l'essentiel." },
     ],
     faq: [
-      { question: "Pouvez-vous intervenir le jour même du déménagement ?", answer: "Selon nos disponibilités, oui. Nous recommandons de réserver au moins 48h à l'avance pour garantir un créneau, mais n'hésitez pas à nous appeler directement pour les urgences." },
+      { question: "Pouvez-vous intervenir le jour même du déménagement ?", answer: "Selon nos disponibilités, oui. Nous recommandons de réserver au moins 15 jours à l'avance pour garantir un créneau, mais n'hésitez pas à nous appeler directement pour les urgences." },
       { question: "Le logement doit-il être totalement vidé pour que vous interveniez ?", answer: "Pour un nettoyage complet, oui — il est préférable que les meubles soient sortis. Pour un nettoyage partiel ou un passage entre deux locataires, nous pouvons adapter notre intervention." },
     ],
     ctaText: "Déménagement en vue ? Bloquez votre créneau, devis gratuit sous 24h.",
