@@ -146,7 +146,7 @@ export const serviceContents: ServiceContent[] = [
     ],
     faq: [
       { question: "Le nettoyage fin de bail garantit-il la récupération de ma caution ?", answer: "Un nettoyage professionnel conforme aux standards attendus maximise significativement vos chances. Cependant, la caution peut aussi couvrir des dommages autres que la propreté et bien que nous pouvons garantir une qualité de nettoyage fidèle à nos standard, nous n'avons aucune influence les décisions du propriétaire." },
-      { question: "Quand dois-je réserver l'intervention ?", answer: "Idéalement 3 à 5 jours avant la remise des clés. En cas d'urgence, nous acceptons des délais plus courts selon nos disponibilités — contactez-nous directement." },
+      { question: "Quand dois-je réserver l'intervention ?", answer: "Idéalement 3 à 5 jours avant la remise des clés. En cas d'urgence, nous acceptons des délais plus courts selon nos disponibilités, contactez-nous directement." },
       { question: "Intervenez-vous aussi pour les propriétaires avant une remise en location ?", answer: "Absolument. Nous proposons le même service pour les propriétaires souhaitant remettre un bien en parfait état entre deux locataires." },
     ],
     ctaText: "Votre état des lieux approche ? Demandez votre devis dès maintenant, réponse sous 24h.",
