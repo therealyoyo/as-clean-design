@@ -316,7 +316,7 @@ export default function Contact() {
                     {
                       icon: Star,
                       title: "Satisfaction garantie",
-                      desc: "Résultat non satisfaisant ? Nous revenons sans frais supplémentaires jusqu'à votre entière satisfaction."
+                      desc: "Résultat non satisfaisant ? Nous revenons jusqu'à votre entière satisfaction."
                     },
                     {
                       icon: CalendarCheck,
