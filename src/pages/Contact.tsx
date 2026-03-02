@@ -246,7 +246,7 @@ export default function Contact() {
               {/* WhatsApp */}
               <div>
                 <a
-                  href="https://wa.me/32000000000"
+                  href="https://wa.me/32460976545"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 p-4 border border-border rounded-lg hover:border-accent transition-colors"
@@ -262,13 +262,13 @@ export default function Contact() {
               {/* Phone */}
               <div>
                 <a
-                  href="tel:+32000000000"
+                  href="tel:+32460976545"
                   className="flex items-center gap-3 p-4 border border-border rounded-lg hover:border-accent transition-colors"
                 >
                   <Phone className="h-6 w-6 text-accent" />
                   <div>
                     <p className="font-medium text-primary">Appelez-nous</p>
-                    <p className="text-sm text-muted-foreground">+32 (0)00 000 000</p>
+                    <p className="text-sm text-muted-foreground">+32 460 97 65 45</p>
                   </div>
                 </a>
               </div>
@@ -311,7 +311,7 @@ export default function Contact() {
                     {
                       icon: ShieldCheck,
                       title: "Équipes assurées & vérifiées",
-                      desc: "Tous nos prestataires sont sélectionnés, vérifiés et couverts par une assurance RC professionnelle."
+                      desc: "Nos professionnels sont sélectionnés, vérifiés et couverts par une assurance RC professionnelle."
                     },
                     {
                       icon: Star,

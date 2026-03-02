@@ -90,6 +90,53 @@ export default function Index() {
         </div>
       </section>
 
+      {/* À propos */}
+      <section className="section-padding bg-secondary">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="rounded-2xl overflow-hidden shadow-md">
+              <img
+                src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800"
+                alt="Équipe A.S. Cleaning Services"
+                className="w-full h-72 object-cover"
+                loading="lazy"
+              />
+            </div>
+            <div>
+              <span className="text-accent text-sm font-semibold uppercase tracking-widest">
+                Qui sommes-nous
+              </span>
+              <h2 className="text-3xl font-bold text-primary mt-2 mb-4">
+                Une entreprise bruxelloise à votre service
+              </h2>
+              <p className="text-muted-foreground mb-4">
+                A.S. Cleaning Services est une entreprise de nettoyage professionnel
+                basée à Bruxelles, au service des particuliers et des professionnels
+                depuis notre création. Nous intervenons dans toutes les communes
+                bruxelloises et en périphérie.
+              </p>
+              <p className="text-muted-foreground mb-6">
+                Notre priorité : vous offrir un résultat impeccable, une communication
+                claire et une flexibilité totale — que vous ayez besoin d'une
+                intervention ponctuelle ou d'un entretien régulier.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <Link to="/a-propos">
+                  <Button variant="outline" className="rounded-full border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                    En savoir plus
+                  </Button>
+                </Link>
+                <Link to="/contact">
+                  <Button className="rounded-full bg-accent text-accent-foreground hover:bg-primary hover:text-primary-foreground">
+                    Demande de devis
+                  </Button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials */}
       <section className="section-padding">
         <div className="container mx-auto px-4">

@@ -50,12 +50,12 @@ export default function Footer() {
               <p className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 mt-0.5 shrink-0" />
                 {/* Placeholder address */}
-                Rue de la Propreté 00, 1000 Bruxelles
+                Avenue Besme 89, 1190 Forest
               </p>
               <p className="flex items-center gap-2">
                 <Phone className="h-4 w-4 shrink-0" />
-                <a href="tel:+32000000000" className="hover:text-accent transition-colors">
-                  +32 (0)00 000 000
+                <a href="tel:+32460976545" className="hover:text-accent transition-colors">
+                  +32 460 97 65 45
                 </a>
               </p>
               <p className="flex items-center gap-2">
