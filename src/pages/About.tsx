@@ -74,9 +74,6 @@ export default function About() {
       <section className="section-padding">
         <div className="container mx-auto px-4 max-w-3xl text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-primary mb-6">Notre histoire</h2>
-          <p className="text-lg font-semibold text-primary mb-6">
-            Nés à Bruxelles, construits pour Bruxelles.
-          </p>
           <p className="text-muted-foreground mb-4">
             A.S. Cleaning Services a été fondée avec une conviction simple : les entreprises
             et institutions bruxelloises méritent un service de nettoyage qui tient vraiment
