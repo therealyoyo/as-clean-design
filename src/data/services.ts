@@ -244,7 +244,7 @@ export const serviceContents: ServiceContent[] = [
     avantages: [
       { title: "Résultat sans traces garanti", description: "Nos techniciens utilisent des outils professionnels (raclettes, perche télescopique, eau déminéralisée) pour un séchage parfait, même sur les grandes surfaces." },
       { title: "Intervention en sécurité", description: "Pour les vitres en hauteur ou difficiles d'accès, nous disposons du matériel adapté pour intervenir sans risque." },
-      { title: "Programmable à votre rythme", description: "Ponctuel (printemps, automne) ou régulier (mensuel, bimestriel) — nous nous adaptons à votre fréquence idéale." },
+      { title: "Programmable à votre rythme", description: "Ponctuel (printemps, automne) ou régulier (mensuel, bimestriel),  nous nous adaptons à votre fréquence idéale." },
     ],
     faq: [
       { question: "Lavez-vous aussi les vitres des étages supérieurs ?", answer: "Oui. Selon la hauteur et l'accessibilité, nous utilisons des perches télescopiques ou des équipements adaptés. Pour les grandes hauteurs, un devis spécifique est établi." },
