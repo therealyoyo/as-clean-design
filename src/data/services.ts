@@ -155,7 +155,7 @@ export const serviceContents: ServiceContent[] = [
     slug: "avant-apres-demenagement",
     heroTitle: "Nettoyage avant & après déménagement",
     heroSubtitle: "Quittez un logement propre. Entrez dans un espace sain. On s'occupe du reste.",
-    intro: "Un déménagement, c'est déjà assez stressant sans ajouter le nettoyage en profondeur par-dessus. Que vous quittiez un logement ou que vous arriviez dans un nouveau, nos équipes interviennent avant ou après le déménagement pour vous garantir un espace parfaitement propre — sans que vous ayez à y penser.",
+    intro: "Un déménagement, c'est déjà assez stressant sans ajouter le nettoyage en profondeur par-dessus. Que vous quittiez un logement ou que vous arriviez dans un nouveau, nos équipes interviennent avant ou après le déménagement pour vous garantir un espace parfaitement propre sans que vous ayez à y penser.",
     inclusions: [
       "Nettoyage complet de l'ancien logement après sortie des meubles",
       "Nettoyage du nouveau logement avant installation (poussières, résidus, traces)",
