@@ -281,11 +281,14 @@ export default function Contact() {
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {[
-                    "Ixelles", "Saint-Gilles", "Etterbeek", "Uccle", "Auderghem",
-                    "Woluwe-Saint-Pierre", "Woluwe-Saint-Lambert", "Schaerbeek",
-                    "Anderlecht", "Molenbeek", "Forest", "Jette", "Evere",
-                    "Watermael-Boitsfort", "Koekelberg", "Ganshoren",
-                    "Berchem-Sainte-Agathe", "Laeken", "Bruxelles-Ville"
+                    "Anderlecht", "Auderghem", "Beersel", "Berchem-Sainte-Agathe",
+                    "Bruxelles-Ville", "Drogenbos", "Etterbeek", "Evere", "Forest",
+                    "Ganshoren", "Grimbergen", "Hoeilaart", "Ixelles", "Jette",
+                    "Koekelberg", "Kraainem", "Laeken", "Linkebeek", "Machelen",
+                    "Molenbeek", "Overijse", "Rhode-Saint-Genèse", "Saint-Gilles",
+                    "Saint-Josse-ten-Noode", "Schaerbeek", "Tervuren", "Uccle",
+                    "Vilvoorde", "Watermael-Boitsfort", "Wezembeek-Oppem",
+                    "Woluwe-Saint-Lambert", "Woluwe-Saint-Pierre", "Zaventem"
                   ].map((commune) => (
                     <span
                       key={commune}
@@ -294,9 +297,6 @@ export default function Contact() {
                       {commune}
                     </span>
                   ))}
-                  <span className="text-xs px-2 py-1 rounded-full bg-accent/10 text-accent border border-accent/30 font-medium">
-                    + périphérie
-                  </span>
                 </div>
               </div>
 
