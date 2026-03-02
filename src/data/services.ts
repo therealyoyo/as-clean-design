@@ -196,7 +196,7 @@ export const serviceContents: ServiceContent[] = [
       { title: "Protégez votre investissement", description: "Un logement systématiquement propre préserve vos équipements, votre note et la confiance de la plateforme." },
     ],
     faq: [
-      { question: "Pouvez-vous gérer plusieurs logements Airbnb en même temps ?", answer: "Oui. Nous travaillons avec des hôtes multi-propriétés à Bruxelles. Un interlocuteur unique gère l'ensemble de vos biens." },
+      { question: "Pouvez-vous gérer plusieurs logements Airbnb en même temps ?", answer: "Oui. Nous pouvons travaillez avec des hôtes multi-propriétés à Bruxelles et environs. Un interlocuteur unique gère l'ensemble de vos biens ce qui facilite la gestion" },
       { question: "Que se passe-t-il si un voyageur laisse le logement en très mauvais état ?", answer: "Dans ce cas, nous vous contactons pour évaluer le temps supplémentaire nécessaire et ajuster la facturation en transparence. Pas de surprises." },
       { question: "Faites-vous du linge de lit et serviettes ?", answer: "Nous pouvons nous charger du changement et de la mise en place si vous fournissez le linge propre sur place. La prestation de blanchisserie externalisée est disponible sur demande." },
     ],
