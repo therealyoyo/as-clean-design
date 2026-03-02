@@ -49,6 +49,42 @@ export default function Contact() {
     setForm((prev) => ({ ...prev, [field]: value }));
   }
 
+  async function handleCodePostalChange(value: string) {
+    handleChange("codePostal", value);
+
+    if (value.length === 4) {
+      try {
+        const response = await fetch(
+          `https://api-adresse.bpost.be/open-address/v1/areas?postalCode=${value}&language=FR`
+        );
+        if (response.ok) {
+          const data = await response.json();
+          const areas = data?.areas;
+          if (areas && areas.length > 0) {
+            const cityName: string = areas[0].municipalityName || areas[0].name || "";
+            handleChange("ville", cityName);
+
+            const matched = brusselsCommunes.find((c) => {
+              const commune = c.toLowerCase();
+              const city = cityName.toLowerCase();
+              return (
+                commune.includes(city) ||
+                city.includes(commune.split(" ")[0]) ||
+                commune.split("-")[0].trim() === city.split("-")[0].trim()
+              );
+            });
+
+            if (matched) {
+              handleChange("commune", matched);
+            }
+          }
+        }
+      } catch {
+        // Détection silencieuse
+      }
+    }
+  }
+
   function onCaptchaVerify(token: string) {
     setCaptchaToken(token);
   }
@@ -225,7 +261,7 @@ export default function Contact() {
                   <Input
                     placeholder="1000"
                     value={form.codePostal}
-                    onChange={(e) => handleChange("codePostal", e.target.value)}
+                    onChange={(e) => handleCodePostalChange(e.target.value)}
                   />
                 </div>
                 <div>
