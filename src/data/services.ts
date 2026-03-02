@@ -491,7 +491,7 @@ export const serviceContents: ServiceContent[] = [
     slug: "restaurants",
     heroTitle: "Nettoyage de restaurants et secteur horeca à Bruxelles",
     heroSubtitle: "Des normes d'hygiène irréprochables pour protéger vos clients et votre réputation.",
-    intro: "Dans la restauration, l'hygiène est une obligation légale autant qu'un argument commercial. Une cuisine mal entretenue expose vos clients à des risques et votre établissement à des sanctions. A.S. Cleaning Services propose un service de nettoyage horeca rigoureux, adapté aux contraintes des établissements bruxellois.",
+    intro: "Dans la restauration, l'hygiène est une obligation légale autant qu'un argument commercial. Une cuisine mal entretenue expose vos clients à des risques et votre établissement à des sanctions. A.S. Cleaning Services propose un service de nettoyage horeca rigoureux, adapté aux contraintes des établissements.",
     inclusions: [
       "Nettoyage en profondeur de la cuisine professionnelle (plans de travail, équipements, sols)",
       "Dégraissage des hottes, filtres et zones de cuisson",
