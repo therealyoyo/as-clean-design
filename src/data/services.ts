@@ -258,7 +258,7 @@ export const serviceContents: ServiceContent[] = [
     slug: "entretien-bureaux",
     heroTitle: "Entretien régulier de bureaux",
     heroSubtitle: "Un espace de travail propre chaque matin, sans que vous ayez à y penser.",
-    intro: "Un bureau propre inspire confiance à vos collaborateurs comme à vos clients. A.S. Cleaning Services prend en charge l'entretien régulier de vos locaux professionnels à Bruxelles : quotidien, hebdomadaire ou sur mesure. Vous définissez la fréquence, on assure le résultat.",
+    intro: "Un bureau propre inspire confiance à vos collaborateurs comme à vos clients. A.S. Cleaning Services prend en charge l'entretien régulier de vos locaux professionnels : quotidien, hebdomadaire ou sur mesure. Vous définissez la fréquence, on assure le résultat.",
     inclusions: [
       "Aspiration et lavage de tous les types de sols (moquette, carrelage, parquet)",
       "Dépoussiérage des bureaux, postes de travail et mobilier",
