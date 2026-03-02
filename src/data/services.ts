@@ -351,6 +351,231 @@ export const serviceContents: ServiceContent[] = [
     ],
     ctaText: "Votre commerce mérite un entretien à la hauteur de votre image. Demandez un devis sous 24h.",
   },
+
+  {
+    slug: "ecoles",
+    heroTitle: "Nettoyage d'écoles et établissements scolaires à Bruxelles",
+    heroSubtitle: "Un environnement propre et sain pour que les élèves et le personnel travaillent dans les meilleures conditions.",
+    intro: "Les établissements scolaires accueillent chaque jour des dizaines à des centaines de personnes dans des espaces partagés. Classes, couloirs, sanitaires, réfectoires : chaque zone exige un niveau d'hygiène rigoureux. A.S. Cleaning Services intervient dans les écoles bruxelloises avec des protocoles adaptés aux contraintes du secteur éducatif.",
+    inclusions: [
+      "Nettoyage et désinfection des salles de classe (sols, bureaux, tableaux, poignées)",
+      "Entretien des couloirs, halls d'entrée et escaliers",
+      "Désinfection approfondie des sanitaires et vestiaires",
+      "Nettoyage du réfectoire et des espaces de restauration",
+      "Entretien des salles informatiques et de sport",
+      "Vidage des corbeilles et gestion des déchets",
+      "Nettoyage des surfaces vitrées et des portes d'entrée",
+    ],
+    avantages: [
+      {
+        title: "Protocoles adaptés au milieu scolaire",
+        description: "Nos équipes connaissent les exigences sanitaires spécifiques aux environnements accueillant des enfants. Produits adaptés, zones prioritaires identifiées, protocoles constants.",
+      },
+      {
+        title: "Intervention en dehors des heures de cours",
+        description: "Nous intervenons le matin avant l'arrivée des élèves, en fin d'après-midi ou le week-end pour ne jamais perturber le fonctionnement de l'établissement.",
+      },
+      {
+        title: "Suivi régulier et communication directe",
+        description: "Un interlocuteur dédié assure le suivi de votre établissement. Toute remarque du personnel ou de la direction est traitée directement et rapidement.",
+      },
+    ],
+    faq: [
+      {
+        question: "Intervenez-vous pendant les vacances scolaires ?",
+        answer: "Oui, les vacances sont souvent le meilleur moment pour effectuer un nettoyage en profondeur des locaux. Nous proposons des prestations de grand nettoyage spécifiques aux périodes de fermeture.",
+      },
+      {
+        question: "Les produits utilisés sont-ils sans danger pour les enfants ?",
+        answer: "Nous utilisons des produits professionnels dont nous précisons la composition sur demande. Les interventions sont planifiées hors présence des élèves pour garantir leur sécurité.",
+      },
+      {
+        question: "Pouvez-vous gérer plusieurs bâtiments sur un même site scolaire ?",
+        answer: "Oui. Nous établissons un plan d'intervention global pour les sites multi-bâtiments, avec une coordination centralisée et un seul interlocuteur pour l'ensemble.",
+      },
+    ],
+    ctaText: "Votre établissement mérite un partenaire fiable. Contactez-nous pour un devis adapté à votre école.",
+  },
+
+  {
+    slug: "medical",
+    heroTitle: "Nettoyage du secteur médical et des cabinets à Bruxelles",
+    heroSubtitle: "Hygiène irréprochable et protocoles stricts pour les environnements de soins.",
+    intro: "Dans un cabinet médical, une clinique ou un espace paramédical, la propreté n'est pas une option : c'est une exigence fondamentale pour la sécurité des patients et du personnel. A.S. Cleaning Services applique des protocoles de nettoyage et de désinfection rigoureux, adaptés aux normes du secteur de la santé.",
+    inclusions: [
+      "Désinfection des salles de consultation et surfaces de soins",
+      "Nettoyage et désinfection des sanitaires patients et personnel",
+      "Entretien des salles d'attente et espaces d'accueil",
+      "Désinfection des poignées, interrupteurs et surfaces à contact fréquent",
+      "Nettoyage des sols avec produits désinfectants homologués",
+      "Gestion hygiénique des déchets (hors déchets médicaux réglementés)",
+      "Nettoyage des vitrages et cloisons de séparation",
+    ],
+    avantages: [
+      {
+        title: "Protocoles conformes aux exigences sanitaires",
+        description: "Nos équipes sont formées aux protocoles de désinfection spécifiques aux environnements médicaux. Chaque intervention respecte les standards d'hygiène du secteur.",
+      },
+      {
+        title: "Discrétion et professionnalisme",
+        description: "Nous intervenons avec le respect du contexte médical : discrétion absolue, comportement professionnel, respect de la confidentialité des espaces.",
+      },
+      {
+        title: "Disponibilité adaptée aux horaires de consultation",
+        description: "Interventions tôt le matin, en soirée ou entre deux plages de consultation pour ne jamais gêner l'accueil des patients.",
+      },
+    ],
+    faq: [
+      {
+        question: "Gérez-vous l'élimination des déchets médicaux ?",
+        answer: "Non. L'élimination des déchets médicaux réglementés relève d'opérateurs agréés spécialisés. Nous prenons en charge les déchets ménagers et assimilés générés par l'activité courante du cabinet.",
+      },
+      {
+        question: "Quels types de cabinets servez-vous ?",
+        answer: "Nous intervenons pour les médecins généralistes, spécialistes, dentistes, kinésithérapeutes, ostéopathes, psychologues et tout professionnel de santé disposant de locaux à entretenir à Bruxelles.",
+      },
+      {
+        question: "Utilisez-vous des produits désinfectants spécifiques ?",
+        answer: "Oui. Nous utilisons des produits désinfectants adaptés aux surfaces médicales. La liste des produits utilisés est communiquée sur demande pour validation par votre équipe.",
+      },
+    ],
+    ctaText: "La sécurité de vos patients commence par des locaux irréprochables. Demandez un devis sous 24h.",
+  },
+
+  {
+    slug: "hotels",
+    heroTitle: "Nettoyage hôtelier et hospitality à Bruxelles",
+    heroSubtitle: "L'expérience client de vos voyageurs commence par la propreté de chaque espace.",
+    intro: "Dans le secteur hôtelier, la propreté est directement liée à la réputation et aux avis clients. Chambres, parties communes, restaurant, spa : chaque espace doit être impeccable à chaque rotation. A.S. Cleaning Services propose un service de nettoyage hôtelier fiable et cadencé sur vos taux d'occupation à Bruxelles.",
+    inclusions: [
+      "Nettoyage complet des chambres entre chaque départ (remise en état complète)",
+      "Recouche quotidienne pour les séjours prolongés",
+      "Entretien des couloirs, ascenseurs et parties communes",
+      "Nettoyage des espaces de restauration et salles de petit-déjeuner",
+      "Entretien des sanitaires communs et vestiaires du personnel",
+      "Nettoyage des espaces bien-être (piscine, sauna, salle de fitness) sur demande",
+      "Gestion du linge et coordination avec la buanderie sur demande",
+    ],
+    avantages: [
+      {
+        title: "Cadencé sur votre taux d'occupation",
+        description: "Nos équipes s'adaptent à votre planning de réservations. Les jours de forte rotation sont anticipés pour garantir des délais de remise en état conformes à vos standards.",
+      },
+      {
+        title: "Standards hôteliers respectés",
+        description: "Nous connaissons les exigences du secteur : présentation du lit, pliage du linge, vérification des consommables, rapport de chambre. Chaque détail compte.",
+      },
+      {
+        title: "Coordination fluide avec votre équipe",
+        description: "Nos équipes s'intègrent dans votre organisation existante. Un interlocuteur unique assure la coordination avec votre responsable d'hébergement.",
+      },
+    ],
+    faq: [
+      {
+        question: "Intervenez-vous pour les petits hôtels et B&B ou uniquement les grandes structures ?",
+        answer: "Nous travaillons avec toutes les tailles d'établissements, des maisons d'hôtes de quelques chambres aux hôtels de plusieurs dizaines de chambres. Le service est toujours dimensionné à votre réalité.",
+      },
+      {
+        question: "Pouvez-vous gérer les pics d'activité comme les week-ends ou les événements ?",
+        answer: "Oui. Nous planifions les renforts en avance en fonction de votre calendrier. Signalez-nous les périodes de forte activité lors de l'établissement du contrat.",
+      },
+      {
+        question: "Que se passe-t-il en cas de départ tardif ou d'arrivée anticipée ?",
+        answer: "Nous travaillons avec votre réception pour adapter les priorités de nettoyage en temps réel. La flexibilité est au coeur de notre organisation hôtelière.",
+      },
+    ],
+    ctaText: "Offrez à vos voyageurs l'expérience qu'ils méritent. Demandez un devis adapté à votre établissement.",
+  },
+
+  {
+    slug: "restaurants",
+    heroTitle: "Nettoyage de restaurants et secteur horeca à Bruxelles",
+    heroSubtitle: "Des normes d'hygiène irréprochables pour protéger vos clients et votre réputation.",
+    intro: "Dans la restauration, l'hygiène est une obligation légale autant qu'un argument commercial. Une cuisine mal entretenue expose vos clients à des risques et votre établissement à des sanctions. A.S. Cleaning Services propose un service de nettoyage horeca rigoureux, adapté aux contraintes des établissements bruxellois.",
+    inclusions: [
+      "Nettoyage en profondeur de la cuisine professionnelle (plans de travail, équipements, sols)",
+      "Dégraissage des hottes, filtres et zones de cuisson",
+      "Désinfection des surfaces alimentaires et zones de préparation",
+      "Nettoyage de la salle, mobilier et équipements clients",
+      "Entretien des sanitaires clients et du personnel",
+      "Nettoyage des vitrages, façades et espaces d'entrée",
+      "Gestion des déchets et entretien des zones de stockage",
+    ],
+    avantages: [
+      {
+        title: "Conforme aux normes HACCP",
+        description: "Nos protocoles de nettoyage en cuisine sont alignés sur les exigences HACCP. Vous disposez d'un espace de préparation alimentaire propre et conforme à chaque ouverture.",
+      },
+      {
+        title: "Intervention après le service",
+        description: "Nous intervenons après votre fermeture pour que cuisine et salle soient prêtes dès l'ouverture du lendemain, sans aucune contrainte pour votre équipe.",
+      },
+      {
+        title: "Protection de votre réputation",
+        description: "Un établissement propre se voit, se sent et s'entend. Les avis clients mentionnent systématiquement l'hygiène. Protégez votre note en confiant l'entretien à des professionnels.",
+      },
+    ],
+    faq: [
+      {
+        question: "Intervenez-vous aussi pour les food trucks et dark kitchens ?",
+        answer: "Oui. Nous adaptons notre service à tous les formats de restauration : restaurant traditionnel, brasserie, fast food, dark kitchen, food truck disposant d'un espace fixe.",
+      },
+      {
+        question: "À quelle fréquence faut-il nettoyer une cuisine professionnelle ?",
+        answer: "Un nettoyage quotidien de la cuisine est indispensable. Un nettoyage en profondeur hebdomadaire ou mensuel (dégraissage des hottes, nettoyage des fours, traitement des sols) complète l'entretien courant.",
+      },
+      {
+        question: "Pouvez-vous intervenir en urgence avant une inspection sanitaire ?",
+        answer: "Nous faisons notre possible pour répondre aux demandes urgentes. Contactez-nous directement par téléphone pour les situations urgentes.",
+      },
+    ],
+    ctaText: "Votre cuisine doit être irréprochable à chaque service. Demandez un devis adapté à votre établissement.",
+  },
+
+  {
+    slug: "parkings",
+    heroTitle: "Nettoyage de parkings et garages à Bruxelles",
+    heroSubtitle: "Un parking propre valorise votre immeuble et améliore la sécurité de ses utilisateurs.",
+    intro: "Les parkings et garages accumulent huile, poussières, résidus de pneus et déchets qui dégradent l'image de votre bâtiment et peuvent représenter des risques pour les usagers. A.S. Cleaning Services assure l'entretien régulier et le nettoyage en profondeur des parkings bruxellois, souterrains comme en surface.",
+    inclusions: [
+      "Balayage mécanique ou manuel des allées et places de stationnement",
+      "Lavage haute pression des sols béton et asphalte",
+      "Traitement des taches d'huile et de carburant",
+      "Nettoyage des colonnes, murs et signalétique",
+      "Entretien des cages d'escalier et ascenseurs du parking",
+      "Nettoyage des postes de contrôle et cabines de péage",
+      "Ramassage des déchets et gestion des corbeilles",
+    ],
+    avantages: [
+      {
+        title: "Matériel adapté aux grandes surfaces",
+        description: "Nos équipes utilisent des autolaveuses et du matériel de nettoyage adapté aux volumes importants pour un résultat efficace et homogène sur toute la surface.",
+      },
+      {
+        title: "Intervention sans perturber les usagers",
+        description: "Nous planifions les interventions aux heures creuses ou de nuit pour que le parking reste accessible pendant l'essentiel du nettoyage.",
+      },
+      {
+        title: "Valorisation de votre patrimoine",
+        description: "Un parking propre améliore l'image générale de votre immeuble ou centre commercial et contribue au confort et à la sécurité de ses utilisateurs.",
+      },
+    ],
+    faq: [
+      {
+        question: "Intervenez-vous pour les parkings privés en copropriété ?",
+        answer: "Oui. Nous travaillons régulièrement avec des syndics pour l'entretien des parkings de copropriétés bruxelloises. Un devis global peut inclure à la fois les parties communes de l'immeuble et le parking.",
+      },
+      {
+        question: "Pouvez-vous traiter les taches d'huile anciennes et incrustées ?",
+        answer: "Oui, avec des produits dégraissants professionnels et un nettoyage haute pression. Les taches très anciennes peuvent nécessiter un traitement spécifique que nous évaluons lors de la visite.",
+      },
+      {
+        question: "Quelle est la fréquence recommandée pour un parking ?",
+        answer: "Pour un parking résidentiel, un passage hebdomadaire ou bimensuel est généralement suffisant. Pour un parking commercial à forte fréquentation, un passage quotidien peut être nécessaire. Nous dimensionnons le service selon votre trafic.",
+      },
+    ],
+    ctaText: "Votre parking mérite le même soin que le reste de votre immeuble. Demandez un devis sous 24h.",
+  },
 ];
 
 /** Helper to find a service by category slug and service slug */
