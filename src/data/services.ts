@@ -206,7 +206,7 @@ export const serviceContents: ServiceContent[] = [
     slug: "apres-travaux",
     heroTitle: "Nettoyage après travaux",
     heroSubtitle: "Vos travaux sont terminés. Notre travail commence et vous pouvez enfin profiter de votre intérieur.",
-    intro: "Rénovation, peinture, carrelage, pose de parquet — chaque chantier laisse derrière lui une couche de poussière, de résidus et de salissures tenaces qui demandent bien plus qu'un simple coup de balai. Nos équipes sont équipées pour gérer le nettoyage post-travaux dans les logements bruxellois, quelle que soit l'ampleur du chantier.",
+    intro: "Rénovation, peinture, carrelage, pose de parquet, ... chaque chantier laisse derrière lui une couche de poussière, de résidus et de salissures tenaces qui demandent bien plus qu'un simple coup de balai. Nos équipes sont équipées pour gérer le nettoyage post-travaux dans les logements, quelle que soit l'ampleur du chantier.",
     inclusions: [
       "Élimination des poussières de plâtre, sciure et résidus de matériaux",
       "Nettoyage des sols neufs (carrelage, parquet, béton ciré) sans risque de rayure",
@@ -217,15 +217,15 @@ export const serviceContents: ServiceContent[] = [
       "Évacuation des petits déchets de chantier résiduels",
     ],
     avantages: [
-      { title: "Matériel adapté aux surfaces neuves", description: "Parquet fraîchement posé, carrelage neuf, peinture récente — nous utilisons des produits et techniques qui nettoient sans endommager." },
-      { title: "Coordination avec vos artisans", description: "Nous pouvons intervenir dès la fin d'un corps de métier ou à la toute fin du chantier — selon votre planning." },
+      { title: "Matériel adapté aux surfaces neuves", description: "Parquet fraîchement posé, carrelage neuf, peinture récente, ...  nous utilisons des produits et techniques qui nettoient sans endommager." },
+      { title: "Coordination avec vos artisans", description: "Nous pouvons intervenir dès la fin d'un corps de métier ou à la toute fin du chantier selon votre planning." },
       { title: "Un logement prêt à habiter", description: "À notre départ, votre logement est propre, sain et prêt à être investi ou remis en location." },
     ],
     faq: [
       { question: "À quel moment de la rénovation faut-il prévoir le nettoyage ?", answer: "Idéalement après le dernier corps de métier et avant votre emménagement ou l'état des lieux. Pour les grands chantiers, un nettoyage intermédiaire peut être prévu." },
       { question: "Pouvez-vous évacuer les déchets de chantier ?", answer: "Nous gérons les petits déchets résiduels (sacs, cartons, emballages). Pour des volumes importants (gravats, plaques), nous recommandons de prévoir une benne avec votre entrepreneur." },
     ],
-    ctaText: "Chantier terminé ? Demandez votre devis — réponse sous 24h, intervention possible dès cette semaine.",
+    ctaText: "Chantier terminé ? Demandez votre devis, réponse sous 24h",
   },
   {
     slug: "lavage-vitres",
