@@ -351,15 +351,21 @@ export default function Contact() {
 
               <div className="bg-secondary rounded-xl p-6">
                 <h3 className="font-semibold text-primary mb-3">Zones desservies</h3>
-                <div className="flex flex-wrap gap-2">
-                  {brusselsCommunes.map((c) => (
-                    <span
-                      key={c}
-                      className="text-xs px-2 py-1 rounded-full bg-background text-primary border border-border font-medium"
-                    >
-                      {c}
-                    </span>
-                  ))}
+                <div className="space-y-3">
+                  <div className="flex items-center gap-3">
+                    <MapPin className="h-5 w-5 text-accent shrink-0" />
+                    <div>
+                      <p className="text-sm font-medium text-primary">Bruxelles</p>
+                      <p className="text-xs text-muted-foreground">19 communes</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <MapPin className="h-5 w-5 text-accent shrink-0" />
+                    <div>
+                      <p className="text-sm font-medium text-primary">Brabant Wallon</p>
+                      <p className="text-xs text-muted-foreground">et périphérie</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
