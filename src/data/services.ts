@@ -21,20 +21,6 @@ export interface ServiceCategory {
 
 export const serviceCategories: ServiceCategory[] = [
   {
-    title: "Particuliers",
-    slug: "particuliers",
-    icon: "Home",
-    description: "Services de nettoyage pour les particuliers à Bruxelles.",
-    services: [
-      { title: "Grand ménage", slug: "grand-menage", image: "https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=1600" },
-      { title: "Fin de bail / état des lieux", slug: "fin-de-bail", image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600" },
-      { title: "Avant / après déménagement", slug: "avant-apres-demenagement", image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600" },
-      { title: "Airbnb & locations courte durée", slug: "airbnb", image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1600" },
-      { title: "Après travaux", slug: "apres-travaux", image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600" },
-      { title: "Lavage de vitres", slug: "lavage-vitres", image: "https://images.unsplash.com/photo-1596263373796-a9e1a44960bf?w=1600" },
-    ],
-  },
-  {
     title: "Bureaux & Entreprises",
     slug: "bureaux-entreprises",
     icon: "Building2",
@@ -54,32 +40,23 @@ export const serviceCategories: ServiceCategory[] = [
     services: [
       { title: "Écoles & établissements scolaires", slug: "ecoles", image: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1600" },
       { title: "Secteur médical & cabinets", slug: "medical", image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1600" },
-      
       { title: "Restaurants & horeca", slug: "restaurants", image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600" },
       { title: "Parkings & garages", slug: "parkings", image: "https://images.unsplash.com/photo-1506521781263-d8422e82f27a?w=1600" },
+      { title: "Nettoyage événementiel", slug: "evenementiel", image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1600" },
     ],
   },
   {
-    title: "Nettoyages Spéciaux",
-    slug: "nettoyages-speciaux",
-    icon: "Sparkles",
-    description: "Interventions spéciales et nettoyages ponctuels.",
+    title: "Particuliers",
+    slug: "particuliers",
+    icon: "Home",
+    description: "Services de nettoyage pour les particuliers à Bruxelles.",
     services: [
-      { title: "Enlèvement de graffitis", slug: "graffitis", image: "https://images.unsplash.com/photo-1567095761054-7a02e69e5b2b?w=1600" },
-      { title: "Après sinistre", slug: "apres-sinistre", image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600" },
-      { title: "Avant / après événement", slug: "evenementiel", image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1600" },
-    ],
-  },
-  {
-    title: "Sols",
-    slug: "sols",
-    icon: "Layers",
-    description: "Nettoyage et traitement de tous types de sols.",
-    services: [
-      { title: "Moquettes & tapis", slug: "moquettes-tapis", image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600" },
-      { title: "Parquets", slug: "parquets", image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600" },
-      { title: "Marbres & pierres naturelles", slug: "marbres", image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1600" },
-      { title: "Sols béton & industriels", slug: "beton-industriel", image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600" },
+      { title: "Grand ménage", slug: "grand-menage", image: "https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=1600" },
+      { title: "Fin de bail / état des lieux", slug: "fin-de-bail", image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600" },
+      { title: "Avant / après déménagement", slug: "avant-apres-demenagement", image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600" },
+      { title: "Airbnb & locations courte durée", slug: "airbnb", image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1600" },
+      { title: "Après travaux", slug: "apres-travaux", image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600" },
+      { title: "Lavage de vitres", slug: "lavage-vitres", image: "https://images.unsplash.com/photo-1596263373796-a9e1a44960bf?w=1600" },
     ],
   },
 ];
@@ -621,99 +598,11 @@ export const serviceContents: ServiceContent[] = [
     ctaText: "Vos façades et vitrages méritent une attention régulière. Demandez un devis sous 24h.",
   },
 
-  {
-    slug: "graffitis",
-    heroTitle: "Enlèvement de graffitis à Bruxelles",
-    heroSubtitle: "Votre façade retrouve son aspect d'origine, rapidement et sans traces.",
-    intro: "Un graffiti sur votre façade, vitrine ou portail dégrade immédiatement l'image de votre bâtiment et peut encourager de nouvelles dégradations si la réaction tarde. A.S. Cleaning Services intervient pour l'enlèvement de graffitis sur tous types de surfaces à Bruxelles, avec les techniques et produits adaptés à chaque matériau.",
-    inclusions: [
-      "Diagnostic du type de surface et de la peinture pour choisir la technique adaptée",
-      "Traitement chimique avec produits anti-graffiti professionnels",
-      "Nettoyage haute pression si la surface le permet",
-      "Traitement des surfaces poreuses (brique, pierre, béton) sans endommagement",
-      "Nettoyage des résidus de traitement et rinçage",
-      "Application d'un traitement anti-graffiti préventif sur demande",
-    ],
-    avantages: [
-      {
-        title: "Intervention rapide pour limiter les dégâts",
-        description: "Plus un graffiti est traité tôt, plus il est facile à enlever. Nous organisons les interventions rapidement pour limiter l'incrustation de la peinture dans le matériau.",
-      },
-      {
-        title: "Techniques adaptées à chaque surface",
-        description: "Brique, béton, pierre, métal, verre : chaque matériau requiert une approche différente. Nous évaluons la surface avant toute intervention pour garantir un résultat sans dommage.",
-      },
-      {
-        title: "Protection préventive disponible",
-        description: "Après l'enlèvement, nous pouvons appliquer un traitement anti-graffiti qui facilite le nettoyage lors d'éventuelles prochaines dégradations.",
-      },
-    ],
-    faq: [
-      {
-        question: "Pouvez-vous enlever des graffitis anciens ou très incrustés ?",
-        answer: "Nous traitons les graffitis récents comme anciens. Les graffitis anciens peuvent nécessiter plusieurs passages ou des techniques plus intensives. Nous l'évaluons lors de la visite et vous informons avant l'intervention.",
-      },
-      {
-        question: "Le traitement risque-t-il d'abîmer ma façade ?",
-        answer: "Non si l'intervention est correctement réalisée. C'est pourquoi nous effectuons toujours un diagnostic préalable et testons les produits sur une zone discrète avant de traiter l'ensemble de la surface.",
-      },
-      {
-        question: "Intervenez-vous aussi sur les véhicules ou le mobilier urbain privé ?",
-        answer: "Nous intervenons principalement sur les façades, murs, portails et surfaces fixes des bâtiments. Pour d'autres types de supports, contactez-nous pour évaluer la faisabilité.",
-      },
-    ],
-    ctaText: "Un graffiti sur votre bâtiment ? Contactez-nous rapidement pour une intervention ciblée.",
-  },
-
-  {
-    slug: "apres-sinistre",
-    heroTitle: "Nettoyage après sinistre à Bruxelles",
-    heroSubtitle: "Un soutien concret et rapide pour remettre vos locaux en état après un incident.",
-    intro: "Dégât des eaux, incendie, inondation ou vandalisme : un sinistre laisse des traces qui dépassent largement ce qu'un nettoyage ordinaire peut traiter. A.S. Cleaning Services intervient après sinistre pour les professionnels et particuliers bruxellois avec les équipements et l'expertise nécessaires pour remettre vos locaux en état dans les meilleurs délais.",
-    inclusions: [
-      "Pompage et extraction des eaux stagnantes",
-      "Nettoyage et assainissement des surfaces touchées (sols, murs, plafonds)",
-      "Élimination des résidus de suie, fumée et odeurs après incendie",
-      "Traitement anti-moisissures sur les zones humidifiées",
-      "Évacuation des matériaux et objets endommagés irrécupérables",
-      "Séchage et ventilation accélérée des espaces sinistrés",
-      "Rapport d'intervention détaillé pour votre assurance sur demande",
-    ],
-    avantages: [
-      {
-        title: "Réactivité en situation d'urgence",
-        description: "Nous organisons les interventions après sinistre en priorité. Plus vite les locaux sont traités, plus les dégâts secondaires (moisissures, odeurs, détérioration des matériaux) sont limités.",
-      },
-      {
-        title: "Équipements spécialisés",
-        description: "Extraction d'eau, déshumidification, traitement des odeurs : nous disposons du matériel adapté aux situations post-sinistre que l'entretien courant ne permet pas de gérer.",
-      },
-      {
-        title: "Documentation pour votre assurance",
-        description: "Nous pouvons établir un rapport d'intervention détaillé utile dans le cadre de votre dossier de sinistre auprès de votre compagnie d'assurance.",
-      },
-    ],
-    faq: [
-      {
-        question: "Dans quel délai pouvez-vous intervenir après un sinistre ?",
-        answer: "Nous traitons les demandes après sinistre en priorité. Contactez-nous directement par téléphone pour les urgences et nous évaluons ensemble les délais d'intervention possibles.",
-      },
-      {
-        question: "Travaillez-vous en coordination avec les assurances ?",
-        answer: "Nous pouvons établir les documents nécessaires à votre dossier d'assurance. La coordination avec votre expert en sinistres se fait à votre initiative et nous fournissons les informations nécessaires.",
-      },
-      {
-        question: "Intervenez-vous aussi pour les particuliers après un dégât des eaux ?",
-        answer: "Oui. Ce service est disponible pour les particuliers comme pour les professionnels, que ce soit pour un appartement, une maison ou des locaux commerciaux.",
-      },
-    ],
-    ctaText: "Vous venez de subir un sinistre ? Contactez-nous directement par téléphone pour une intervention rapide.",
-  },
 
   {
     slug: "evenementiel",
-    heroTitle: "Nettoyage avant et après événement à Bruxelles",
-    heroSubtitle: "Votre événement se passe dans un espace impeccable. Après, on s'occupe de tout.",
+    heroTitle: "Nettoyage événementiel à Bruxelles",
+    heroSubtitle: "Votre salle est prête avant l'arrivée de vos invités et remise en état après leur départ.",
     intro: "Séminaire, conférence, soirée privée, salon professionnel : chaque événement génère des besoins de nettoyage spécifiques avant et après. A.S. Cleaning Services propose un service de nettoyage événementiel pour les organisateurs et gestionnaires de salles bruxelloises qui veulent s'assurer que l'espace est prêt avant les invités et remis en état après leur départ.",
     inclusions: [
       "Nettoyage complet de la salle avant l'événement (sols, surfaces, sanitaires)",
