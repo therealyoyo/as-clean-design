@@ -10,7 +10,7 @@ export default function Zones() {
     <>
       <HeroSection
         title="Zones desservies"
-        subtitle="Nous intervenons dans toute la Région de Bruxelles-Capitale et en périphérie."
+        subtitle="A.S. Cleaning Services intervient à Bruxelles et dans le Brabant Wallon."
         image="https://images.unsplash.com/photo-1559060092-17782223e1d0?w=1600"
       />
 
@@ -18,7 +18,8 @@ export default function Zones() {
         <div className="container mx-auto px-4">
           <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-10">
             Basés à Saint-Gilles, nous couvrons l'ensemble de la Région bruxelloise
-            ainsi que le Brabant Wallon.
+            ainsi que le Brabant Wallon. Vous avez un besoin en dehors de ces zones ?
+            Contactez-nous, nous étudions chaque demande.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-xl mx-auto">
