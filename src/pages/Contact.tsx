@@ -237,7 +237,7 @@ export default function Contact() {
                         key={`${s.category.slug}-${s.service.slug}`}
                         value={`${s.category.title} - ${s.service.title}`}
                       >
-                        {s.service.title}
+                        <span className="text-muted-foreground text-xs">{s.category.title}</span> — {s.service.title}
                       </SelectItem>
                     ))}
                   </SelectContent>
