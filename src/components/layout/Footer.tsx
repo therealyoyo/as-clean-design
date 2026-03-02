@@ -2,7 +2,7 @@
  * Footer component with company info, quick links, service links, trust badges, and copyright.
  */
 import { Link } from "react-router-dom";
-import { Phone, Mail, MapPin, Shield, FileText, Clock, ThumbsUp } from "lucide-react";
+import { Phone, Mail, MapPin, CalendarCheck, ShieldCheck, Sparkles, BadgeCheck } from "lucide-react";
 import { serviceCategories } from "@/data/services";
 
 const quickLinks = [
@@ -17,10 +17,10 @@ const quickLinks = [
 ];
 
 const trustBadges = [
-  { icon: Shield, label: "Équipes assurées" },
-  { icon: FileText, label: "Devis Gratuit & Rapide" },
-  { icon: Clock, label: "7j/7" },
-  { icon: ThumbsUp, label: "Satisfaction garantie" },
+  { icon: CalendarCheck, label: "Flexibilité Totale" },
+  { icon: ShieldCheck, label: "Une équipe sélectionnée, formée, contrôlée" },
+  { icon: Sparkles, label: "Qualité Garantie" },
+  { icon: BadgeCheck, label: "Devis Gratuit & Rapide" },
 ];
 
 export default function Footer() {
