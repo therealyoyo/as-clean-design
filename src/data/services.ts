@@ -127,7 +127,7 @@ export const serviceContents: ServiceContent[] = [
   {
     slug: "fin-de-bail",
     heroTitle: "Nettoyage fin de bail & état des lieux",
-    heroSubtitle: "Partez l'esprit tranquille  et maximisez vos chances de récupérer votre caution.",
+    heroSubtitle: "Partez l'esprit tranquille et maximisez vos chances de récupérer votre caution.",
     intro: "L'état des lieux de sortie est le moment de vérité entre locataire et propriétaire. Un logement mal nettoyé peut vous coûter plusieurs centaines d'euros via votre caution. Nos équipes réalisent un nettoyage de fin de bail complet et conforme aux standards attendus lors d'un état des lieux de sortie",
     inclusions: [
       "Nettoyage complet de toutes les pièces, sol au plafond",
