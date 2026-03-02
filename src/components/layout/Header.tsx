@@ -43,11 +43,10 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur border-b border-border">
-      <div className="container mx-auto flex items-center justify-between h-16 px-4">
+      <div className="container mx-auto flex items-center justify-between h-20 md:h-24 px-4">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2 font-bold text-xl text-primary shrink-0">
-          <img src="/logo.png" alt="A.S. Cleaning Services" className="h-14 md:h-16 w-auto" />
-          A.S. Cleaning Services
+        <Link to="/" className="shrink-0">
+          <img src="/logo.png" alt="A.S. Cleaning Services" className="h-16 md:h-20 w-auto" />
         </Link>
 
         {/* Desktop Navigation */}
