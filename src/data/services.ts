@@ -118,7 +118,7 @@ export const serviceContents: ServiceContent[] = [
     ],
     faq: [
       { question: "Combien de temps dure un grand ménage ?", answer: "En fonction de la surface et de l'état du logement, un grand ménage prend généralement entre 3h et 8h. Nous estimons la durée lors du devis, après échange sur vos besoins." },
-      { question: "Faut-il être présent pendant l'intervention ?", answer: "Non, ce n'est pas obligatoire. Beaucoup de clients nous confient un accès et récupèrent un logement impeccable à leur retour. Toutes nos équipes signent un engagement de confidentialité." },
+      { question: "Faut-il être présent pendant l'intervention ?", answer: "Non, ce n'est pas obligatoire. Beaucoup de clients nous confient un accès et récupèrent un logement impeccable à leur retour." },
       { question: "Le grand ménage inclut-il les vitres extérieures ?", answer: "Le grand ménage standard couvre les vitres intérieures. Le lavage des vitres extérieures est un service distinct que vous pouvez ajouter au même devis." },
       { question: "Quels produits utilisez-vous ?", answer: "Nos équipes utilisent des produits professionnels adaptés à chaque surface — efficaces sans abîmer vos matériaux. Si vous avez des contraintes spécifiques (allergies, matériaux délicats), signalez-le lors de votre demande de devis." },
     ],
