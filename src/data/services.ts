@@ -52,7 +52,7 @@ export const serviceCategories: ServiceCategory[] = [
     services: [
       { title: "Écoles & établissements scolaires", slug: "ecoles", image: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1600" },
       { title: "Secteur médical & cabinets", slug: "medical", image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1600" },
-      { title: "Hôtels & hospitality", slug: "hotels", image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600" },
+      
       { title: "Restaurants & horeca", slug: "restaurants", image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600" },
       { title: "Parkings & garages", slug: "parkings", image: "https://images.unsplash.com/photo-1506521781263-d8422e82f27a?w=1600" },
     ],
@@ -440,51 +440,6 @@ export const serviceContents: ServiceContent[] = [
       },
     ],
     ctaText: "La sécurité de vos patients commence par des locaux irréprochables. Demandez un devis sous 24h.",
-  },
-
-  {
-    slug: "hotels",
-    heroTitle: "Nettoyage hôtelier et hospitality à Bruxelles",
-    heroSubtitle: "L'expérience client de vos voyageurs commence par la propreté de chaque espace.",
-    intro: "Dans le secteur hôtelier, la propreté est directement liée à la réputation et aux avis clients. Chambres, parties communes, restaurant, spa : chaque espace doit être impeccable à chaque rotation. A.S. Cleaning Services propose un service de nettoyage hôtelier fiable et cadencé sur vos taux d'occupation à Bruxelles.",
-    inclusions: [
-      "Nettoyage complet des chambres entre chaque départ (remise en état complète)",
-      "Recouche quotidienne pour les séjours prolongés",
-      "Entretien des couloirs, ascenseurs et parties communes",
-      "Nettoyage des espaces de restauration et salles de petit-déjeuner",
-      "Entretien des sanitaires communs et vestiaires du personnel",
-      "Nettoyage des espaces bien-être (piscine, sauna, salle de fitness) sur demande",
-      "Gestion du linge et coordination avec la buanderie sur demande",
-    ],
-    avantages: [
-      {
-        title: "Cadencé sur votre taux d'occupation",
-        description: "Nos équipes s'adaptent à votre planning de réservations. Les jours de forte rotation sont anticipés pour garantir des délais de remise en état conformes à vos standards.",
-      },
-      {
-        title: "Standards hôteliers respectés",
-        description: "Nous connaissons les exigences du secteur : présentation du lit, pliage du linge, vérification des consommables, rapport de chambre. Chaque détail compte.",
-      },
-      {
-        title: "Coordination fluide avec votre équipe",
-        description: "Nos équipes s'intègrent dans votre organisation existante. Un interlocuteur unique assure la coordination avec votre responsable d'hébergement.",
-      },
-    ],
-    faq: [
-      {
-        question: "Intervenez-vous pour les petits hôtels et B&B ou uniquement les grandes structures ?",
-        answer: "Nous travaillons avec toutes les tailles d'établissements, des maisons d'hôtes de quelques chambres aux hôtels de plusieurs dizaines de chambres. Le service est toujours dimensionné à votre réalité.",
-      },
-      {
-        question: "Pouvez-vous gérer les pics d'activité comme les week-ends ou les événements ?",
-        answer: "Oui. Nous planifions les renforts en avance en fonction de votre calendrier. Signalez-nous les périodes de forte activité lors de l'établissement du contrat.",
-      },
-      {
-        question: "Que se passe-t-il en cas de départ tardif ou d'arrivée anticipée ?",
-        answer: "Nous travaillons avec votre réception pour adapter les priorités de nettoyage en temps réel. La flexibilité est au coeur de notre organisation hôtelière.",
-      },
-    ],
-    ctaText: "Offrez à vos voyageurs l'expérience qu'ils méritent. Demandez un devis adapté à votre établissement.",
   },
 
   {
