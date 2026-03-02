@@ -183,8 +183,8 @@ export default function Header() {
                   Demande de devis
                 </Button>
               </Link>
-              <a href="tel:+32000000000" className="flex items-center gap-2 mt-3 text-sm text-muted-foreground">
-                <Phone className="h-4 w-4" /> +32 (0)00 000 000
+              <a href="tel:+32460976545" className="flex items-center gap-2 mt-3 text-sm text-muted-foreground">
+                <Phone className="h-4 w-4" /> +32 460 97 65 45
               </a>
             </div>
           </nav>
