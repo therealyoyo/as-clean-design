@@ -531,6 +531,274 @@ export const serviceContents: ServiceContent[] = [
     ],
     ctaText: "Votre parking mérite le même soin que le reste de votre immeuble. Demandez un devis sous 24h.",
   },
+
+  {
+    slug: "apres-chantier",
+    heroTitle: "Nettoyage après chantier et fin de travaux à Bruxelles",
+    heroSubtitle: "Votre chantier est livré. On prend le relais pour que vos locaux soient prêts à être utilisés.",
+    intro: "Un chantier terminé laisse toujours derrière lui une quantité importante de poussières, résidus et salissures qui demandent une intervention spécialisée. Que ce soit pour une rénovation de bureaux, un aménagement commercial ou une construction neuve, A.S. Cleaning Services assure le nettoyage de fin de chantier pour les professionnels bruxellois.",
+    inclusions: [
+      "Élimination complète des poussières de plâtre, sciure et résidus de matériaux",
+      "Nettoyage des sols neufs sans risque d'endommagement (carrelage, parquet, béton)",
+      "Décroutage des vitrages (projections de peinture, colle, plâtre)",
+      "Dépoussiérage en hauteur (plafonds, faux-plafonds, gaines apparentes)",
+      "Nettoyage des équipements sanitaires et de cuisine nouvellement installés",
+      "Élimination des résidus de colle, joints, silicone et adhésifs",
+      "Évacuation des petits déchets de chantier résiduels",
+    ],
+    avantages: [
+      {
+        title: "Intervention coordonnée avec vos corps de métier",
+        description: "Nous nous positionnons en fin de chantier ou entre deux phases de travaux selon votre planning. Une coordination simple pour que le nettoyage ne bloque jamais la livraison.",
+      },
+      {
+        title: "Matériel adapté aux surfaces neuves",
+        description: "Parquet fraîchement posé, carrelage neuf, peinture récente : nous utilisons des produits et techniques qui nettoient sans endommager les finitions.",
+      },
+      {
+        title: "Locaux prêts à être livrés ou occupés",
+        description: "À notre départ, vos locaux sont propres, sains et prêts à accueillir vos équipes ou à être remis à votre client. Aucun délai supplémentaire.",
+      },
+    ],
+    faq: [
+      {
+        question: "Quelle est la différence entre le nettoyage après chantier et le grand ménage classique ?",
+        answer: "Le nettoyage après chantier est plus technique et exige du matériel spécifique pour traiter les poussières fines, les résidus de colle et les projections sur surfaces neuves. Un grand ménage classique ne suffit pas pour ces situations.",
+      },
+      {
+        question: "Pouvez-vous intervenir sur des chantiers en cours ou uniquement à la fin ?",
+        answer: "Les deux sont possibles. Pour les grands chantiers, un nettoyage intermédiaire après le gros oeuvre facilite le travail des corps de métier suivants. Nous adaptons l'intervention à votre phasage.",
+      },
+      {
+        question: "Intervenez-vous aussi pour les particuliers après des travaux de rénovation ?",
+        answer: "Oui. Ce service est disponible pour les particuliers comme pour les professionnels. Le devis est établi après une visite ou un échange détaillé sur l'étendue des travaux réalisés.",
+      },
+    ],
+    ctaText: "Chantier terminé ? Contactez-nous pour un devis rapide. Intervention possible dès cette semaine.",
+  },
+
+  {
+    slug: "vitres-facades",
+    heroTitle: "Nettoyage de vitres et façades commerciales à Bruxelles",
+    heroSubtitle: "Des vitrages impeccables qui valorisent votre enseigne et l'image de votre bâtiment.",
+    intro: "Les vitrages et façades d'un bâtiment commercial sont sa carte de visite. Encrassés ou tachés, ils dégradent immédiatement la perception de votre entreprise. A.S. Cleaning Services assure le lavage de vitres et le nettoyage de façades pour les commerces, immeubles de bureaux et bâtiments professionnels bruxellois.",
+    inclusions: [
+      "Lavage intérieur et extérieur de tous les vitrages en façade",
+      "Nettoyage des châssis, cadres et joints de fenêtres",
+      "Traitement des baies vitrées, cloisons et verrières",
+      "Nettoyage des enseignes et caissons lumineux sur demande",
+      "Nettoyage des façades (pierre, béton, bardage) sur devis spécifique",
+      "Intervention en hauteur avec matériel adapté",
+      "Séchage sans traces avec outils professionnels",
+    ],
+    avantages: [
+      {
+        title: "Résultat visible et durable",
+        description: "Nos techniciens utilisent des outils professionnels et de l'eau traitée pour un résultat sans traces visible immédiatement, même sur les grandes surfaces vitrées.",
+      },
+      {
+        title: "Intervention en hauteur sécurisée",
+        description: "Nous disposons du matériel nécessaire pour intervenir sur les façades et vitrages en hauteur dans le respect des règles de sécurité.",
+      },
+      {
+        title: "Planifiable à votre fréquence",
+        description: "Mensuel, trimestriel ou ponctuel : nous nous adaptons à votre budget et à l'exposition de votre façade pour maintenir une image irréprochable toute l'année.",
+      },
+    ],
+    faq: [
+      {
+        question: "Jusqu'à quelle hauteur pouvez-vous intervenir ?",
+        answer: "Nous intervenons jusqu'à plusieurs étages avec nos équipements standards (perches télescopiques, nacelle sur devis). Pour les très grandes hauteurs, nous établissons un devis spécifique après évaluation sur site.",
+      },
+      {
+        question: "Nettoyez-vous aussi les façades en pierre ou en béton ?",
+        answer: "Oui, sur devis spécifique. Le nettoyage de façades en matériaux solides (pierre naturelle, béton, bardage) demande une évaluation préalable pour choisir les techniques et produits adaptés sans endommager le revêtement.",
+      },
+      {
+        question: "Quelle fréquence conseillez-vous pour une vitrine commerciale en centre-ville ?",
+        answer: "En zone urbaine bruxelloise, une vitrine commerciale bénéficie idéalement d'un lavage toutes les 2 à 4 semaines selon son exposition et la pollution environnante. Nous pouvons inclure ce service dans un contrat d'entretien global.",
+      },
+    ],
+    ctaText: "Vos façades et vitrages méritent une attention régulière. Demandez un devis sous 24h.",
+  },
+
+  {
+    slug: "desinfection",
+    heroTitle: "Désinfection et nébulisation à Bruxelles",
+    heroSubtitle: "Une désinfection en profondeur pour des locaux sains et sécurisés.",
+    intro: "Certaines situations exigent bien plus qu'un nettoyage classique : reprise après une épidémie, prévention dans un environnement à risque, assainissement après un incident sanitaire. A.S. Cleaning Services propose des interventions de désinfection et de nébulisation pour les professionnels et institutions bruxelloises.",
+    inclusions: [
+      "Désinfection complète des surfaces par application manuelle de produits biocides",
+      "Nébulisation de l'espace avec produits désinfectants à diffusion aérienne",
+      "Traitement prioritaire des zones à contact fréquent (poignées, claviers, rampes)",
+      "Désinfection des sanitaires, vestiaires et espaces communs",
+      "Traitement des systèmes de ventilation accessibles",
+      "Attestation d'intervention disponible sur demande",
+    ],
+    avantages: [
+      {
+        title: "Intervention rapide sur demande",
+        description: "Nous organisons les interventions de désinfection dans les meilleurs délais, notamment pour les situations urgentes nécessitant une remise en service rapide des locaux.",
+      },
+      {
+        title: "Produits professionnels adaptés",
+        description: "Nous utilisons des produits biocides professionnels sélectionnés pour leur efficacité sur les surfaces traitées. La liste des produits est communiquée sur demande.",
+      },
+      {
+        title: "Locaux sécurisés pour vos équipes",
+        description: "Après intervention, vos locaux sont aérés et prêts à être réoccupés selon les délais indiqués. Vos collaborateurs reprennent leur activité dans un environnement assaini.",
+      },
+    ],
+    faq: [
+      {
+        question: "Dans quelles situations recommandez-vous une désinfection par nébulisation ?",
+        answer: "La nébulisation est particulièrement adaptée après un cas de maladie contagieuse dans les locaux, avant la réouverture après une longue fermeture, ou comme mesure préventive dans les environnements très fréquentés.",
+      },
+      {
+        question: "Faut-il évacuer les locaux pendant l'intervention ?",
+        answer: "Oui. Les locaux doivent être évacués pendant la nébulisation et pendant un délai de ventilation après l'intervention. Nous vous communiquons les délais précis avant chaque mission.",
+      },
+      {
+        question: "Délivrez-vous une attestation après la désinfection ?",
+        answer: "Oui, une attestation d'intervention est disponible sur demande. Elle précise la date, les zones traitées et les produits utilisés.",
+      },
+    ],
+    ctaText: "Besoin d'une désinfection de vos locaux ? Contactez-nous pour une intervention rapide.",
+  },
+
+  {
+    slug: "graffitis",
+    heroTitle: "Enlèvement de graffitis à Bruxelles",
+    heroSubtitle: "Votre façade retrouve son aspect d'origine, rapidement et sans traces.",
+    intro: "Un graffiti sur votre façade, vitrine ou portail dégrade immédiatement l'image de votre bâtiment et peut encourager de nouvelles dégradations si la réaction tarde. A.S. Cleaning Services intervient pour l'enlèvement de graffitis sur tous types de surfaces à Bruxelles, avec les techniques et produits adaptés à chaque matériau.",
+    inclusions: [
+      "Diagnostic du type de surface et de la peinture pour choisir la technique adaptée",
+      "Traitement chimique avec produits anti-graffiti professionnels",
+      "Nettoyage haute pression si la surface le permet",
+      "Traitement des surfaces poreuses (brique, pierre, béton) sans endommagement",
+      "Nettoyage des résidus de traitement et rinçage",
+      "Application d'un traitement anti-graffiti préventif sur demande",
+    ],
+    avantages: [
+      {
+        title: "Intervention rapide pour limiter les dégâts",
+        description: "Plus un graffiti est traité tôt, plus il est facile à enlever. Nous organisons les interventions rapidement pour limiter l'incrustation de la peinture dans le matériau.",
+      },
+      {
+        title: "Techniques adaptées à chaque surface",
+        description: "Brique, béton, pierre, métal, verre : chaque matériau requiert une approche différente. Nous évaluons la surface avant toute intervention pour garantir un résultat sans dommage.",
+      },
+      {
+        title: "Protection préventive disponible",
+        description: "Après l'enlèvement, nous pouvons appliquer un traitement anti-graffiti qui facilite le nettoyage lors d'éventuelles prochaines dégradations.",
+      },
+    ],
+    faq: [
+      {
+        question: "Pouvez-vous enlever des graffitis anciens ou très incrustés ?",
+        answer: "Nous traitons les graffitis récents comme anciens. Les graffitis anciens peuvent nécessiter plusieurs passages ou des techniques plus intensives. Nous l'évaluons lors de la visite et vous informons avant l'intervention.",
+      },
+      {
+        question: "Le traitement risque-t-il d'abîmer ma façade ?",
+        answer: "Non si l'intervention est correctement réalisée. C'est pourquoi nous effectuons toujours un diagnostic préalable et testons les produits sur une zone discrète avant de traiter l'ensemble de la surface.",
+      },
+      {
+        question: "Intervenez-vous aussi sur les véhicules ou le mobilier urbain privé ?",
+        answer: "Nous intervenons principalement sur les façades, murs, portails et surfaces fixes des bâtiments. Pour d'autres types de supports, contactez-nous pour évaluer la faisabilité.",
+      },
+    ],
+    ctaText: "Un graffiti sur votre bâtiment ? Contactez-nous rapidement pour une intervention ciblée.",
+  },
+
+  {
+    slug: "apres-sinistre",
+    heroTitle: "Nettoyage après sinistre à Bruxelles",
+    heroSubtitle: "Un soutien concret et rapide pour remettre vos locaux en état après un incident.",
+    intro: "Dégât des eaux, incendie, inondation ou vandalisme : un sinistre laisse des traces qui dépassent largement ce qu'un nettoyage ordinaire peut traiter. A.S. Cleaning Services intervient après sinistre pour les professionnels et particuliers bruxellois avec les équipements et l'expertise nécessaires pour remettre vos locaux en état dans les meilleurs délais.",
+    inclusions: [
+      "Pompage et extraction des eaux stagnantes",
+      "Nettoyage et assainissement des surfaces touchées (sols, murs, plafonds)",
+      "Élimination des résidus de suie, fumée et odeurs après incendie",
+      "Traitement anti-moisissures sur les zones humidifiées",
+      "Évacuation des matériaux et objets endommagés irrécupérables",
+      "Séchage et ventilation accélérée des espaces sinistrés",
+      "Rapport d'intervention détaillé pour votre assurance sur demande",
+    ],
+    avantages: [
+      {
+        title: "Réactivité en situation d'urgence",
+        description: "Nous organisons les interventions après sinistre en priorité. Plus vite les locaux sont traités, plus les dégâts secondaires (moisissures, odeurs, détérioration des matériaux) sont limités.",
+      },
+      {
+        title: "Équipements spécialisés",
+        description: "Extraction d'eau, déshumidification, traitement des odeurs : nous disposons du matériel adapté aux situations post-sinistre que l'entretien courant ne permet pas de gérer.",
+      },
+      {
+        title: "Documentation pour votre assurance",
+        description: "Nous pouvons établir un rapport d'intervention détaillé utile dans le cadre de votre dossier de sinistre auprès de votre compagnie d'assurance.",
+      },
+    ],
+    faq: [
+      {
+        question: "Dans quel délai pouvez-vous intervenir après un sinistre ?",
+        answer: "Nous traitons les demandes après sinistre en priorité. Contactez-nous directement par téléphone pour les urgences et nous évaluons ensemble les délais d'intervention possibles.",
+      },
+      {
+        question: "Travaillez-vous en coordination avec les assurances ?",
+        answer: "Nous pouvons établir les documents nécessaires à votre dossier d'assurance. La coordination avec votre expert en sinistres se fait à votre initiative et nous fournissons les informations nécessaires.",
+      },
+      {
+        question: "Intervenez-vous aussi pour les particuliers après un dégât des eaux ?",
+        answer: "Oui. Ce service est disponible pour les particuliers comme pour les professionnels, que ce soit pour un appartement, une maison ou des locaux commerciaux.",
+      },
+    ],
+    ctaText: "Vous venez de subir un sinistre ? Contactez-nous directement par téléphone pour une intervention rapide.",
+  },
+
+  {
+    slug: "evenementiel",
+    heroTitle: "Nettoyage avant et après événement à Bruxelles",
+    heroSubtitle: "Votre événement se passe dans un espace impeccable. Après, on s'occupe de tout.",
+    intro: "Séminaire, conférence, soirée privée, salon professionnel : chaque événement génère des besoins de nettoyage spécifiques avant et après. A.S. Cleaning Services propose un service de nettoyage événementiel pour les organisateurs et gestionnaires de salles bruxelloises qui veulent s'assurer que l'espace est prêt avant les invités et remis en état après leur départ.",
+    inclusions: [
+      "Nettoyage complet de la salle avant l'événement (sols, surfaces, sanitaires)",
+      "Mise en place et vérification de la propreté générale avant l'arrivée des invités",
+      "Passage de nettoyage pendant l'événement sur demande (pour les longues durées)",
+      "Nettoyage complet après l'événement (déchets, verres, mobilier, sols)",
+      "Remise en état de la salle selon l'état initial ou les exigences du gestionnaire",
+      "Nettoyage des sanitaires et espaces communs mobilisés",
+      "Évacuation des déchets et tri si requis",
+    ],
+    avantages: [
+      {
+        title: "Coordination avec votre planning événementiel",
+        description: "Nous calons notre intervention sur votre timing : préparation la veille ou le matin, remise en état dans la nuit ou le lendemain. La flexibilité horaire est au coeur de ce service.",
+      },
+      {
+        title: "Un espace prêt à être restitué",
+        description: "Après notre passage, la salle est rendue dans l'état attendu par le propriétaire ou le gestionnaire. Vous évitez les frais de remise en état facturés par le lieu.",
+      },
+      {
+        title: "Service disponible le week-end et les jours fériés",
+        description: "La majorité des événements ont lieu en fin de semaine. Nos équipes sont disponibles le samedi et le dimanche pour assurer le nettoyage aux moments où vous en avez besoin.",
+      },
+    ],
+    faq: [
+      {
+        question: "Pouvez-vous intervenir la nuit après un événement en soirée ?",
+        answer: "Oui. Nous planifions des interventions nocturnes pour les événements se terminant tard, afin que la salle soit rendue propre dès le lendemain matin.",
+      },
+      {
+        question: "Intervenez-vous pour des événements de toute taille ?",
+        answer: "Oui, du petit séminaire de 20 personnes au salon professionnel de plusieurs centaines de visiteurs. Nous dimensionnons l'équipe en fonction de la taille de l'espace et du volume attendu.",
+      },
+      {
+        question: "Peut-on réserver une intervention récurrente pour une salle qui accueille des événements régulièrement ?",
+        answer: "Absolument. Nous proposons des contrats événementiels récurrents pour les gestionnaires de salles avec un tarif adapté à la fréquence des interventions.",
+      },
+    ],
+    ctaText: "Organisez votre événement sans vous soucier du nettoyage. Demandez un devis adapté à votre date.",
+  },
 ];
 
 /** Helper to find a service by category slug and service slug */
