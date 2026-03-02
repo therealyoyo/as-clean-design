@@ -74,24 +74,14 @@ export default function About() {
       <section className="section-padding">
         <div className="container mx-auto px-4 max-w-3xl text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-primary mb-6">Notre engagement</h2>
-          <p className="text-muted-foreground mb-4">A.S. Cleaning Services a été fondée avec une conviction simple : nos clients méritent un service de nettoyage qui tient vraiment ses promesses. Pas d'interlocuteur qui change à chaque appel, pas de déception au lendemain d'une première prestation.
-
-
-
-
+          <p className="text-muted-foreground mb-4">
+            A.S. Cleaning Services est née d'une conviction simple : nos clients méritent un service de nettoyage qui honore pleinement ses promesses. Nous avons bâti notre identité sur la fiabilité et la stabilité, afin de vous offrir une sérénité totale au quotidien.
           </p>
           <p className="text-muted-foreground mb-4">
-            
-Chaque nouveau client représente un engagement que nous prenons au sérieux : connaître ses locaux, comprendre ses contraintes, respecter ses horaires. C'est ce qui nous distingue des grands groupes nationaux où vous n'êtes qu'un numéro de contrat.
-          
-
-
-
+            Pour nous, chaque client représente un engagement durable. Nous prenons le temps de connaître vos locaux, de comprendre vos contraintes en détaillant un cahier des charges précis et de respecter scrupuleusement vos horaires. Cette attention aux détails est le cœur de notre métier.
           </p>
           <p className="text-muted-foreground">
-            Nous intervenons pour des entreprises, des syndics, des institutions publiques
-            et des particuliers exigeants. Dans chaque cas, un seul interlocuteur vous suit
-            de la visite initiale jusqu'à chaque prestation. Vous savez toujours à qui vous parlez.
+            Nous intervenons avec la même rigueur pour les entreprises, les syndics, les institutions publiques et les particuliers exigeants. Pour garantir une qualité constante, un interlocuteur unique assure le suivi de vos prestations. Vous bénéficiez ainsi d'un contact direct, humain et efficace : vous savez toujours à qui vous vous adressez.
           </p>
         </div>
       </section>
