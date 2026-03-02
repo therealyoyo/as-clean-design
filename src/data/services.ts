@@ -100,7 +100,7 @@ export const serviceContents: ServiceContent[] = [
   {
     slug: "grand-menage",
     heroTitle: "Grand ménage à domicile",
-    heroSubtitle: "Un nettoyage complet de A à Z — pour retrouver un logement impeccable sans lever le petit doigt.",
+    heroSubtitle: "Un nettoyage complet de A à Z,  pour retrouver un logement impeccable sans lever le petit doigt.",
     intro: "Le grand ménage, c'est une remise à zéro complète de votre intérieur. Cuisine, salle de bain, sols, vitres intérieures, plinthes, placards — nos équipes interviennent en profondeur là où le nettoyage quotidien ne suffit plus. Idéal avant une occasion spéciale, après une période chargée, ou simplement quand vous avez besoin d'un vrai coup de frais.",
     inclusions: [
       "Dépoussiérage complet des surfaces, plinthes et mobilier",
