@@ -42,6 +42,8 @@ export const serviceCategories: ServiceCategory[] = [
     services: [
       { title: "Entretien régulier de bureaux", slug: "entretien-bureaux", image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600" },
       { title: "Locaux commerciaux", slug: "locaux-commerciaux", image: "https://images.unsplash.com/photo-1604328698692-f76ea9498e76?w=1600" },
+      { title: "Après chantier / fin de travaux", slug: "apres-chantier", image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600" },
+      { title: "Vitres & façades commerciales", slug: "vitres-facades", image: "https://images.unsplash.com/photo-1596263373796-a9e1a44960bf?w=1600" },
     ],
   },
   {
@@ -63,9 +65,6 @@ export const serviceCategories: ServiceCategory[] = [
     icon: "Sparkles",
     description: "Interventions spéciales et nettoyages ponctuels.",
     services: [
-      { title: "Après chantier / fin de travaux", slug: "apres-chantier", image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600" },
-      { title: "Vitres & façades commerciales", slug: "vitres-facades", image: "https://images.unsplash.com/photo-1596263373796-a9e1a44960bf?w=1600" },
-      { title: "Désinfection & nébulisation", slug: "desinfection", image: "https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?w=1600" },
       { title: "Enlèvement de graffitis", slug: "graffitis", image: "https://images.unsplash.com/photo-1567095761054-7a02e69e5b2b?w=1600" },
       { title: "Après sinistre", slug: "apres-sinistre", image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600" },
       { title: "Avant / après événement", slug: "evenementiel", image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1600" },
@@ -620,50 +619,6 @@ export const serviceContents: ServiceContent[] = [
       },
     ],
     ctaText: "Vos façades et vitrages méritent une attention régulière. Demandez un devis sous 24h.",
-  },
-
-  {
-    slug: "desinfection",
-    heroTitle: "Désinfection et nébulisation à Bruxelles",
-    heroSubtitle: "Une désinfection en profondeur pour des locaux sains et sécurisés.",
-    intro: "Certaines situations exigent bien plus qu'un nettoyage classique : reprise après une épidémie, prévention dans un environnement à risque, assainissement après un incident sanitaire. A.S. Cleaning Services propose des interventions de désinfection et de nébulisation pour les professionnels et institutions bruxelloises.",
-    inclusions: [
-      "Désinfection complète des surfaces par application manuelle de produits biocides",
-      "Nébulisation de l'espace avec produits désinfectants à diffusion aérienne",
-      "Traitement prioritaire des zones à contact fréquent (poignées, claviers, rampes)",
-      "Désinfection des sanitaires, vestiaires et espaces communs",
-      "Traitement des systèmes de ventilation accessibles",
-      "Attestation d'intervention disponible sur demande",
-    ],
-    avantages: [
-      {
-        title: "Intervention rapide sur demande",
-        description: "Nous organisons les interventions de désinfection dans les meilleurs délais, notamment pour les situations urgentes nécessitant une remise en service rapide des locaux.",
-      },
-      {
-        title: "Produits professionnels adaptés",
-        description: "Nous utilisons des produits biocides professionnels sélectionnés pour leur efficacité sur les surfaces traitées. La liste des produits est communiquée sur demande.",
-      },
-      {
-        title: "Locaux sécurisés pour vos équipes",
-        description: "Après intervention, vos locaux sont aérés et prêts à être réoccupés selon les délais indiqués. Vos collaborateurs reprennent leur activité dans un environnement assaini.",
-      },
-    ],
-    faq: [
-      {
-        question: "Dans quelles situations recommandez-vous une désinfection par nébulisation ?",
-        answer: "La nébulisation est particulièrement adaptée après un cas de maladie contagieuse dans les locaux, avant la réouverture après une longue fermeture, ou comme mesure préventive dans les environnements très fréquentés.",
-      },
-      {
-        question: "Faut-il évacuer les locaux pendant l'intervention ?",
-        answer: "Oui. Les locaux doivent être évacués pendant la nébulisation et pendant un délai de ventilation après l'intervention. Nous vous communiquons les délais précis avant chaque mission.",
-      },
-      {
-        question: "Délivrez-vous une attestation après la désinfection ?",
-        answer: "Oui, une attestation d'intervention est disponible sur demande. Elle précise la date, les zones traitées et les produits utilisés.",
-      },
-    ],
-    ctaText: "Besoin d'une désinfection de vos locaux ? Contactez-nous pour une intervention rapide.",
   },
 
   {
