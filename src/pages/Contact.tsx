@@ -12,7 +12,7 @@ import { getAllServices } from "@/data/services";
 import HeroSection from "@/components/sections/HeroSection";
 
 // Remplace ces deux valeurs après configuration
-const MAKE_WEBHOOK_URL = "MAKE_WEBHOOK_URL_PLACEHOLDER";
+const MAKE_WEBHOOK_URL = "https://hook.eu1.make.com/gda5gpwbw55oil4mmktjaxfgq9tgu2b8";
 const HCAPTCHA_SITE_KEY = "4dbafb40-cf86-4edc-bc8e-509eb564f330";
 
 const brusselsCommunes = [
