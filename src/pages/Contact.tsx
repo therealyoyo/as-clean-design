@@ -5,7 +5,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
-import { MessageCircle, Phone, MapPin, CheckCircle } from "lucide-react";
+import { MessageCircle, Phone, MapPin, CheckCircle, ShieldCheck, Star, CalendarCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -154,9 +154,9 @@ export default function Contact() {
                               {allServices.map((s) => (
                                 <SelectItem
                                   key={`${s.category.slug}-${s.service.slug}`}
-                                  value={`${s.category.title} — ${s.service.title}`}
+                                  value={`${s.category.title} – ${s.service.title}`}
                                 >
-                                  {s.category.title} — {s.service.title}
+                                  {s.category.title} – {s.service.title}
                                 </SelectItem>
                               ))}
                             </SelectContent>
@@ -273,12 +273,68 @@ export default function Contact() {
                 </a>
               </div>
 
-              {/* Map placeholder */}
-              <div className="bg-secondary border border-border rounded-lg h-64 flex items-center justify-center">
-                <div className="text-center text-muted-foreground">
-                  <MapPin className="h-10 w-10 mx-auto mb-2" />
-                  <p className="text-sm">Carte de Bruxelles</p>
-                  <p className="text-xs">(Placeholder pour Google Maps)</p>
+              {/* Zones desservies */}
+              <div>
+                <h3 className="font-semibold text-primary mb-3 flex items-center gap-2">
+                  <MapPin className="h-5 w-5 text-accent" />
+                  Zones desservies
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {[
+                    "Ixelles", "Saint-Gilles", "Etterbeek", "Uccle", "Auderghem",
+                    "Woluwe-Saint-Pierre", "Woluwe-Saint-Lambert", "Schaerbeek",
+                    "Anderlecht", "Molenbeek", "Forest", "Jette", "Evere",
+                    "Watermael-Boitsfort", "Koekelberg", "Ganshoren",
+                    "Berchem-Sainte-Agathe", "Laeken", "Bruxelles-Ville"
+                  ].map((commune) => (
+                    <span
+                      key={commune}
+                      className="text-xs px-2 py-1 rounded-full bg-secondary text-primary border border-border font-medium"
+                    >
+                      {commune}
+                    </span>
+                  ))}
+                  <span className="text-xs px-2 py-1 rounded-full bg-accent/10 text-accent border border-accent/30 font-medium">
+                    + périphérie
+                  </span>
+                </div>
+              </div>
+
+              {/* Pourquoi nous choisir */}
+              <div>
+                <h3 className="font-semibold text-primary mb-3 flex items-center gap-2">
+                  <CheckCircle className="h-5 w-5 text-accent" />
+                  Pourquoi nous choisir ?
+                </h3>
+                <div className="space-y-3">
+                  {[
+                    {
+                      icon: ShieldCheck,
+                      title: "Équipes assurées & vérifiées",
+                      desc: "Tous nos prestataires sont sélectionnés, vérifiés et couverts par une assurance RC professionnelle."
+                    },
+                    {
+                      icon: Star,
+                      title: "Satisfaction garantie",
+                      desc: "Résultat non satisfaisant ? Nous revenons sans frais supplémentaires jusqu'à votre entière satisfaction."
+                    },
+                    {
+                      icon: CalendarCheck,
+                      title: "Flexible & disponible 7j/7",
+                      desc: "Intervention ponctuelle ou contrat récurrent, nous nous adaptons à votre planning et vos besoins."
+                    },
+                  ].map((item) => {
+                    const Icon = item.icon;
+                    return (
+                      <div key={item.title} className="flex gap-3 p-3 rounded-lg bg-secondary border border-border">
+                        <Icon className="h-5 w-5 text-accent shrink-0 mt-0.5" />
+                        <div>
+                          <p className="text-sm font-medium text-primary">{item.title}</p>
+                          <p className="text-xs text-muted-foreground mt-0.5">{item.desc}</p>
+                        </div>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             </div>
