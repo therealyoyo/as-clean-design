@@ -11,7 +11,7 @@ const badges = [
   },
   {
     icon: <ShieldCheck className="h-5 w-5 text-accent" />,
-    label: "Sélectionnée, formée, contrôlée",
+    label: "Une équipe sélectionnée, formée, contrôlée",
     sub: "Des professionnels de confiance",
   },
   {
