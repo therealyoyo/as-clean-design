@@ -15,20 +15,20 @@ import { Badge } from "@/components/ui/badge";
 
 // Map category icon names to components
 const iconMap: Record<string, React.ElementType> = {
-  Home, Building2, Briefcase, Sparkles, Layers,
+  Home, Building2, Briefcase, Sparkles, Layers
 };
 
 const steps = [
-  { icon: ClipboardList, title: "Demandez un devis", description: "Remplissez notre formulaire en ligne ou appelez-nous." },
-  { icon: CalendarCheck, title: "On planifie", description: "Nous organisons l'intervention selon vos disponibilités." },
-  { icon: CheckCircle, title: "Résultat impeccable", description: "Profitez d'un espace propre et sain." },
-];
+{ icon: ClipboardList, title: "Demandez un devis", description: "Remplissez notre formulaire en ligne ou appelez-nous." },
+{ icon: CalendarCheck, title: "On planifie", description: "Nous organisons l'intervention selon vos disponibilités." },
+{ icon: CheckCircle, title: "Résultat impeccable", description: "Profitez d'un espace propre et sain." }];
+
 
 const testimonials = [
-  { name: "Marie D.", commune: "Ixelles", text: "Service impeccable, je recommande vivement !" },
-  { name: "Pierre L.", commune: "Uccle", text: "Équipe très professionnelle et ponctuelle." },
-  { name: "Sophie M.", commune: "Etterbeek", text: "Excellent rapport qualité-prix." },
-];
+{ name: "Marie D.", commune: "Ixelles", text: "Service impeccable, je recommande vivement !" },
+{ name: "Pierre L.", commune: "Uccle", text: "Équipe très professionnelle et ponctuelle." },
+{ name: "Sophie M.", commune: "Etterbeek", text: "Excellent rapport qualité-prix." }];
+
 
 export default function Index() {
   return (
@@ -38,8 +38,8 @@ export default function Index() {
         title="Votre partenaire propreté à Bruxelles"
         subtitle="Services de nettoyage professionnels pour particuliers, bureaux et secteurs spécialisés."
         image="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600"
-        secondaryCta={{ label: "Nos services", link: "/services" }}
-      />
+        secondaryCta={{ label: "Nos services", link: "/services" }} />
+      
 
       {/* Trust bar */}
       <TrustBar />
@@ -60,13 +60,13 @@ export default function Index() {
                     <h3 className="font-semibold text-primary mb-2">{cat.title}</h3>
                     <Link
                       to="/services"
-                      className="text-sm text-accent hover:underline"
-                    >
+                      className="text-sm text-accent hover:underline">
+                      
                       Voir les services →
                     </Link>
                   </CardContent>
-                </Card>
-              );
+                </Card>);
+
             })}
           </div>
         </div>
@@ -77,15 +77,15 @@ export default function Index() {
         <div className="container mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-primary text-center mb-10">Comment ça marche</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {steps.map((step, i) => (
-              <div key={i} className="text-center">
+            {steps.map((step, i) =>
+            <div key={i} className="text-center">
                 <div className="mx-auto mb-4 bg-accent/10 w-16 h-16 rounded-full flex items-center justify-center">
                   <step.icon className="h-8 w-8 text-accent" />
                 </div>
                 <h3 className="font-semibold text-primary mb-2">{step.title}</h3>
                 <p className="text-sm text-muted-foreground">{step.description}</p>
               </div>
-            ))}
+            )}
           </div>
         </div>
       </section>
@@ -99,8 +99,8 @@ export default function Index() {
                 src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800"
                 alt="Équipe A.S. Cleaning Services"
                 className="w-full h-72 object-cover"
-                loading="lazy"
-              />
+                loading="lazy" />
+              
             </div>
             <div>
               <span className="text-accent text-sm font-semibold uppercase tracking-widest">
@@ -115,10 +115,10 @@ export default function Index() {
                 depuis notre création. Nous intervenons dans toutes les communes
                 bruxelloises et en périphérie.
               </p>
-              <p className="text-muted-foreground mb-6">
-                Notre priorité : vous offrir un résultat impeccable, une communication
-                claire et une flexibilité totale — que vous ayez besoin d'une
-                intervention ponctuelle ou d'un entretien régulier.
+              <p className="text-muted-foreground mb-6">Notre priorité : vous offrir un résultat impeccable, une communication claire et une flexibilité totale et ce que vous ayez besoin d'une intervention ponctuelle ou d'un entretien régulier.
+
+
+
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Link to="/a-propos">
@@ -142,20 +142,20 @@ export default function Index() {
         <div className="container mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-primary text-center mb-10">Ce que disent nos clients</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {testimonials.map((t, i) => (
-              <Card key={i}>
+            {testimonials.map((t, i) =>
+            <Card key={i}>
                 <CardContent className="pt-6">
                   <div className="flex gap-1 mb-3">
-                    {[...Array(5)].map((_, j) => (
-                      <Star key={j} className="h-4 w-4 fill-accent text-accent" />
-                    ))}
+                    {[...Array(5)].map((_, j) =>
+                  <Star key={j} className="h-4 w-4 fill-accent text-accent" />
+                  )}
                   </div>
                   <p className="text-sm text-muted-foreground mb-4">"{t.text}"</p>
                   <p className="font-semibold text-primary text-sm">{t.name}</p>
                   <p className="text-xs text-muted-foreground">{t.commune}</p>
                 </CardContent>
               </Card>
-            ))}
+            )}
           </div>
         </div>
       </section>
@@ -166,11 +166,11 @@ export default function Index() {
           <h2 className="text-2xl md:text-3xl font-bold text-primary mb-6">Zones desservies</h2>
           <p className="text-muted-foreground mb-8">Nous intervenons dans les 19 communes de Bruxelles et en périphérie.</p>
           <div className="flex flex-wrap justify-center gap-2">
-            {brusselsCommunes.map((commune) => (
-              <Badge key={commune} variant="secondary" className="text-sm px-3 py-1">
+            {brusselsCommunes.map((commune) =>
+            <Badge key={commune} variant="secondary" className="text-sm px-3 py-1">
                 {commune}
               </Badge>
-            ))}
+            )}
             <Badge className="bg-accent text-accent-foreground text-sm px-3 py-1">
               et périphérie
             </Badge>
@@ -183,6 +183,6 @@ export default function Index() {
 
       {/* Final CTA */}
       <CTABanner />
-    </>
-  );
+    </>);
+
 }
