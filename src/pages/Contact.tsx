@@ -1,7 +1,7 @@
 /**
  * Contact page — Quote form with Zod validation, WhatsApp button, phone, map placeholder.
  */
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
@@ -33,6 +33,11 @@ type FormValues = z.infer<typeof formSchema>;
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
+  const [captchaToken, setCaptchaToken] = useState<string | null>(null);
+
+  useEffect(() => {
+    (window as any).onCaptchaSuccess = (token: string) => setCaptchaToken(token);
+  }, []);
 
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
@@ -228,11 +233,20 @@ export default function Contact() {
                       )}
                     />
 
+                    <div
+                      className="h-captcha"
+                      data-sitekey="10000000-ffff-ffff-ffff-000000000001"
+                      data-callback="onCaptchaSuccess"
+                    />
+                    <p className="text-xs text-muted-foreground mt-1">
+                      Veuillez compléter la vérification anti-spam.
+                    </p>
+
                     <Button
                       type="submit"
                       size="lg"
                       className="w-full bg-accent text-accent-foreground hover:bg-accent/90 rounded-full"
-                      disabled={!form.formState.isValid}
+                      disabled={!captchaToken}
                     >
                       Envoyer la demande
                     </Button>
@@ -271,6 +285,15 @@ export default function Contact() {
                     <p className="text-sm text-muted-foreground">+32 460 97 65 45</p>
                   </div>
                 </a>
+              </div>
+
+              {/* Address */}
+              <div className="flex items-center gap-3 p-4 border border-border rounded-lg">
+                <MapPin className="h-6 w-6 text-accent shrink-0" />
+                <div>
+                  <p className="font-medium text-primary">Notre adresse</p>
+                  <p className="text-sm text-muted-foreground">Parvis de Saint-Gilles 35, 1060 Saint-Gilles</p>
+                </div>
               </div>
 
               {/* Zones desservies */}

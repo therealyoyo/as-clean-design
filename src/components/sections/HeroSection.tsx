@@ -46,7 +46,7 @@ export default function HeroSection({
               <Button
                 size="lg"
                 variant="outline"
-                className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10 rounded-full px-8"
+                className="border-white text-white bg-white/15 hover:bg-white/30 rounded-full px-8"
               >
                 {secondaryCta.label}
               </Button>

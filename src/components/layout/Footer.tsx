@@ -18,7 +18,7 @@ const quickLinks = [
 
 const trustBadges = [
   { icon: Shield, label: "Équipes assurées" },
-  { icon: FileText, label: "Devis gratuit" },
+  { icon: FileText, label: "Devis Gratuit & Rapide" },
   { icon: Clock, label: "7j/7" },
   { icon: ThumbsUp, label: "Satisfaction garantie" },
 ];
@@ -49,8 +49,7 @@ export default function Footer() {
             <div className="space-y-2 text-sm text-primary-foreground/70">
               <p className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 mt-0.5 shrink-0" />
-                {/* Placeholder address */}
-                Avenue Besme 89, 1190 Forest
+                Parvis de Saint-Gilles 35, 1060 Saint-Gilles
               </p>
               <p className="flex items-center gap-2">
                 <Phone className="h-4 w-4 shrink-0" />

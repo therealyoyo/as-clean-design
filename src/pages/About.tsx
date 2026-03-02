@@ -133,7 +133,7 @@ export default function About() {
           <h2 className="text-2xl md:text-3xl font-bold text-primary mb-2">Zones d'intervention</h2>
           <p className="text-lg font-semibold text-primary mb-4">Bruxelles et sa périphérie</p>
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Basés à Forest, nous intervenons dans l'ensemble des 19 communes
+            Basés à Saint-Gilles, nous intervenons dans l'ensemble des 19 communes
             bruxelloises ainsi qu'en Brabant wallon et flamand.
           </p>
           <div className="flex flex-wrap justify-center gap-2">

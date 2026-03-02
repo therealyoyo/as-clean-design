@@ -59,7 +59,7 @@ export default function Index() {
                     </div>
                     <h3 className="font-semibold text-primary mb-2">{cat.title}</h3>
                     <Link
-                      to="/services"
+                      to={`/services/${cat.slug}`}
                       className="text-sm text-accent hover:underline">
                       
                       Voir les services →
@@ -91,7 +91,7 @@ export default function Index() {
       </section>
 
       {/* À propos */}
-      <section className="section-padding bg-secondary">
+      <section className="section-padding">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="rounded-2xl overflow-hidden shadow-md">
@@ -171,9 +171,11 @@ export default function Index() {
                 {commune}
               </Badge>
             )}
-            <Badge className="bg-accent text-accent-foreground text-sm px-3 py-1">
-              et périphérie
-            </Badge>
+            <Link to="/zones#peripherie">
+              <Badge className="bg-accent text-accent-foreground text-sm px-3 py-1 cursor-pointer hover:bg-accent/80">
+                et périphérie
+              </Badge>
+            </Link>
           </div>
           <Link to="/zones" className="inline-block mt-6 text-sm text-accent hover:underline">
             Voir toutes les zones →

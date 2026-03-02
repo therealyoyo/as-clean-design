@@ -42,7 +42,7 @@ export default function Zones() {
       </section>
 
       {/* Periphery */}
-      <section className="section-padding bg-secondary">
+      <section id="peripherie" className="section-padding bg-secondary">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-primary text-center mb-10">
             Périphérie bruxelloise
