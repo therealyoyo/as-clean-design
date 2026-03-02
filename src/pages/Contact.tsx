@@ -20,7 +20,6 @@ const brusselsCommunes = [
   "Etterbeek", "Evere", "Forest", "Ganshoren", "Ixelles", "Jette",
   "Koekelberg", "Molenbeek-Saint-Jean", "Saint-Gilles", "Saint-Josse-ten-Noode",
   "Schaerbeek", "Uccle", "Watermael-Boitsfort", "Woluwe-Saint-Lambert", "Woluwe-Saint-Pierre",
-  "Autre / Périphérie",
 ];
 
 type FormStatus = "idle" | "sending" | "success" | "error";
@@ -38,7 +37,6 @@ export default function Contact() {
     rue: "",
     ville: "",
     codePostal: "",
-    commune: "",
     message: "",
   });
 
@@ -75,7 +73,7 @@ export default function Contact() {
             });
 
             if (matched) {
-              handleChange("commune", matched);
+              handleChange("ville", matched);
             }
           }
         }
@@ -112,7 +110,7 @@ export default function Contact() {
         email: form.email,
         telephone: form.telephone,
         service: form.service,
-        adresse: `${form.rue}, ${form.codePostal} ${form.commune}`,
+        adresse: `${form.rue}, ${form.codePostal} ${form.ville}`,
         message: form.message,
         soumis_le: new Date().toLocaleString("fr-BE", { timeZone: "Europe/Brussels" }),
         statut_pipeline: "Nouveau lead",
@@ -256,7 +254,7 @@ export default function Contact() {
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
+                <div className="space-y-2">
                   <label className="text-sm font-medium text-foreground mb-1.5 block">Code postal</label>
                   <Input
                     placeholder="1000"
@@ -264,18 +262,18 @@ export default function Contact() {
                     onChange={(e) => handleCodePostalChange(e.target.value)}
                   />
                 </div>
-                <div>
-                  <label className="text-sm font-medium text-foreground mb-1.5 block">Commune</label>
-                  <Select onValueChange={(val) => handleChange("commune", val)}>
-                    <SelectTrigger>
-                      <SelectValue placeholder="Sélectionnez une commune" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      {brusselsCommunes.map((c) => (
-                        <SelectItem key={c} value={c}>{c}</SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
+                <div className="space-y-2">
+                  <label className="text-sm font-medium text-foreground mb-1.5 block">Ville / Commune</label>
+                  <Input
+                    placeholder="Ex : Ixelles, Forest, Uccle..."
+                    value={form.ville}
+                    onChange={(e) => handleChange("ville", e.target.value)}
+                  />
+                  {form.codePostal.length === 4 && form.ville && (
+                    <p className="text-xs text-muted-foreground">
+                      Détecté automatiquement. Vous pouvez modifier si nécessaire.
+                    </p>
+                  )}
                 </div>
               </div>
 
@@ -354,7 +352,7 @@ export default function Contact() {
               <div className="bg-secondary rounded-xl p-6">
                 <h3 className="font-semibold text-primary mb-3">Zones desservies</h3>
                 <div className="flex flex-wrap gap-2">
-                  {brusselsCommunes.filter((c) => c !== "Autre / Périphérie").map((c) => (
+                  {brusselsCommunes.map((c) => (
                     <span
                       key={c}
                       className="text-xs px-2 py-1 rounded-full bg-background text-primary border border-border font-medium"
