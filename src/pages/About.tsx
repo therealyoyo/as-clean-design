@@ -3,63 +3,63 @@
  */
 import {
   Target, Users, ShieldCheck, CalendarCheck,
-  ClipboardList, CheckCircle,
-} from "lucide-react";
+  ClipboardList, CheckCircle } from
+"lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import HeroSection from "@/components/sections/HeroSection";
 import CTABanner from "@/components/sections/CTABanner";
 
 const values = [
-  {
-    icon: Users,
-    title: "Un interlocuteur unique",
-    description: "Un seul contact de A à Z. Il connaît vos locaux, vos exigences et votre historique. Toujours le même, toujours disponible.",
-  },
-  {
-    icon: Target,
-    title: "Transparence totale",
-    description: "Devis détaillé après visite, tarifs clairs, prestations listées. Aucun frais caché, aucun forfait vague.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Assurés en RC Pro",
-    description: "A.S. Cleaning Services est couverte par une assurance responsabilité civile professionnelle complète.",
-  },
-  {
-    icon: CalendarCheck,
-    title: "Flexibilité totale",
-    description: "Avant ouverture, après fermeture, le week-end si besoin. Ponctuel ou récurrent, on s'adapte à votre agenda.",
-  },
-];
+{
+  icon: Users,
+  title: "Un interlocuteur unique",
+  description: "Un seul contact de A à Z. Il connaît vos locaux, vos exigences et votre historique. Toujours le même, toujours disponible."
+},
+{
+  icon: Target,
+  title: "Transparence totale",
+  description: "Devis détaillé après visite, tarifs clairs, prestations listées. Aucun frais caché, aucun forfait vague."
+},
+{
+  icon: ShieldCheck,
+  title: "Assurés en RC Pro",
+  description: "A.S. Cleaning Services est couverte par une assurance responsabilité civile professionnelle complète."
+},
+{
+  icon: CalendarCheck,
+  title: "Flexibilité totale",
+  description: "Avant ouverture, après fermeture, le week-end si besoin. Ponctuel ou récurrent, on s'adapte à votre agenda."
+}];
+
 
 const steps = [
-  {
-    icon: ClipboardList,
-    number: "01",
-    title: "Vous nous contactez",
-    description: "Devis gratuit en ligne ou par téléphone. Nous venons visiter vos locaux et évaluer vos besoins.",
-  },
-  {
-    icon: CalendarCheck,
-    number: "02",
-    title: "On planifie ensemble",
-    description: "Nous proposons une fréquence, des horaires et un tarif clair. Vous validez, on démarre.",
-  },
-  {
-    icon: CheckCircle,
-    number: "03",
-    title: "Résultat garanti",
-    description: "Nos équipes interviennent. Nous supervisons la qualité et assurons votre satisfaction dans la durée.",
-  },
-];
+{
+  icon: ClipboardList,
+  number: "01",
+  title: "Vous nous contactez",
+  description: "Devis gratuit en ligne ou par téléphone. Nous venons visiter vos locaux et évaluer vos besoins."
+},
+{
+  icon: CalendarCheck,
+  number: "02",
+  title: "On planifie ensemble",
+  description: "Nous proposons une fréquence, des horaires et un tarif clair. Vous validez, on démarre."
+},
+{
+  icon: CheckCircle,
+  number: "03",
+  title: "Résultat garanti",
+  description: "Nos équipes interviennent. Nous supervisons la qualité et assurons votre satisfaction dans la durée."
+}];
+
 
 const communes = [
-  "Anderlecht", "Auderghem", "Berchem-Sainte-Agathe", "Bruxelles-Ville",
-  "Etterbeek", "Evere", "Forest", "Ganshoren", "Ixelles", "Jette",
-  "Koekelberg", "Laeken", "Molenbeek", "Saint-Gilles", "Schaerbeek",
-  "Uccle", "Watermael-Boitsfort", "Woluwe-Saint-Lambert", "Woluwe-Saint-Pierre",
-];
+"Anderlecht", "Auderghem", "Berchem-Sainte-Agathe", "Bruxelles-Ville",
+"Etterbeek", "Evere", "Forest", "Ganshoren", "Ixelles", "Jette",
+"Koekelberg", "Laeken", "Molenbeek", "Saint-Gilles", "Schaerbeek",
+"Uccle", "Watermael-Boitsfort", "Woluwe-Saint-Lambert", "Woluwe-Saint-Pierre"];
+
 
 export default function About() {
   return (
@@ -67,25 +67,26 @@ export default function About() {
       <HeroSection
         title="À propos de A.S. Cleaning Services"
         subtitle="Entreprise bruxelloise de nettoyage professionnel. Un seul interlocuteur, une qualité constante."
-        image="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1600"
-      />
+        image="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1600" />
+      
 
       {/* Company story */}
       <section className="section-padding">
         <div className="container mx-auto px-4 max-w-3xl text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-primary mb-6">Notre histoire</h2>
-          <p className="text-muted-foreground mb-4">
-            A.S. Cleaning Services a été fondée avec une conviction simple : les entreprises
-            et institutions bruxelloises méritent un service de nettoyage qui tient vraiment
-            ses promesses. Pas d'interlocuteur qui change à chaque appel, pas de déception
-            au lendemain d'une première prestation.
+          <p className="text-muted-foreground mb-4">A.S. Cleaning Services a été fondée avec une conviction simple : nos clients méritent un service de nettoyage qui tient vraiment ses promesses. Pas d'interlocuteur qui change à chaque appel, pas de déception au lendemain d'une première prestation.
+
+
+
+
           </p>
           <p className="text-muted-foreground mb-4">
-            Jeune société, nous avons fait le choix dès le départ de ne pas grossir trop vite.
-            Chaque nouveau client représente un engagement que nous prenons au sérieux :
-            connaître ses locaux, comprendre ses contraintes, respecter ses horaires.
-            C'est ce qui nous distingue des grands groupes nationaux où vous n'êtes
-            qu'un numéro de contrat.
+            
+Chaque nouveau client représente un engagement que nous prenons au sérieux : connaître ses locaux, comprendre ses contraintes, respecter ses horaires. C'est ce qui nous distingue des grands groupes nationaux où vous n'êtes qu'un numéro de contrat.
+          
+
+
+
           </p>
           <p className="text-muted-foreground">
             Nous intervenons pour des entreprises, des syndics, des institutions publiques
@@ -103,8 +104,7 @@ export default function About() {
             Ce que vous pouvez exiger de nous.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {values.map((v, i) => (
-              <Card key={i}>
+            {values.map((v, i) => <Card key={i}>
                 <CardContent className="pt-6 text-center">
                   <div className="mx-auto mb-4 bg-accent/10 w-14 h-14 rounded-full flex items-center justify-center">
                     <v.icon className="h-7 w-7 text-accent" />
@@ -113,7 +113,7 @@ export default function About() {
                   <p className="text-sm text-muted-foreground">{v.description}</p>
                 </CardContent>
               </Card>
-            ))}
+            )}
           </div>
         </div>
       </section>
@@ -123,8 +123,8 @@ export default function About() {
         <div className="container mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-primary text-center mb-10">Comment ça marche</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            {steps.map((step, i) => (
-              <div key={i} className="text-center">
+            {steps.map((step, i) =>
+            <div key={i} className="text-center">
                 <div className="mx-auto mb-4 bg-accent/10 w-16 h-16 rounded-full flex items-center justify-center">
                   <step.icon className="h-8 w-8 text-accent" />
                 </div>
@@ -132,7 +132,7 @@ export default function About() {
                 <h3 className="font-semibold text-primary mb-2">{step.title}</h3>
                 <p className="text-sm text-muted-foreground">{step.description}</p>
               </div>
-            ))}
+            )}
           </div>
         </div>
       </section>
@@ -147,11 +147,11 @@ export default function About() {
             bruxelloises ainsi qu'en Brabant wallon et flamand.
           </p>
           <div className="flex flex-wrap justify-center gap-2">
-            {communes.map((commune) => (
-              <Badge key={commune} variant="secondary" className="text-sm px-3 py-1">
+            {communes.map((commune) =>
+            <Badge key={commune} variant="secondary" className="text-sm px-3 py-1">
                 {commune}
               </Badge>
-            ))}
+            )}
             <Badge className="bg-accent text-accent-foreground text-sm px-3 py-1">
               + périphérie
             </Badge>
@@ -163,8 +163,8 @@ export default function About() {
       <CTABanner
         title="Prêt à travailler avec nous ?"
         subtitle="Demandez votre devis gratuit. Réponse sous 24 h, sans engagement."
-        ctaLabel="Demander un devis"
-      />
-    </>
-  );
+        ctaLabel="Demander un devis" />
+      
+    </>);
+
 }
