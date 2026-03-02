@@ -413,8 +413,8 @@ export const serviceContents: ServiceContent[] = [
     ],
     avantages: [
       {
-        title: "Protocoles conformes aux exigences sanitaires",
-        description: "Nos équipes sont formées aux protocoles de désinfection spécifiques aux environnements médicaux. Chaque intervention respecte les standards d'hygiène du secteur.",
+        title: "Rigueur et méthode à chaque intervention",
+        description: "Nous sélectionnons des professionnels habitués aux environnements exigeants. Chaque passage suit un protocole structuré couvrant les zones prioritaires d'un espace médical.",
       },
       {
         title: "Discrétion et professionnalisme",
