@@ -8,7 +8,7 @@ import { serviceCategories } from "@/data/services";
 const quickLinks = [
   { label: "Accueil", path: "/" },
   { label: "Services", path: "/services" },
-  { label: "Tarifs", path: "/tarifs" },
+  
   { label: "À propos", path: "/a-propos" },
   { label: "FAQ", path: "/faq" },
   { label: "Blog", path: "/blog" },

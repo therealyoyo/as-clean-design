@@ -26,7 +26,6 @@ export const serviceCategories: ServiceCategory[] = [
     icon: "Home",
     description: "Services de nettoyage pour les particuliers à Bruxelles.",
     services: [
-      { title: "Entretien régulier", slug: "entretien-regulier", image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1600" },
       { title: "Grand ménage", slug: "grand-menage", image: "https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=1600" },
       { title: "Fin de bail / état des lieux", slug: "fin-de-bail", image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600" },
       { title: "Avant / après déménagement", slug: "avant-apres-demenagement", image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600" },
@@ -43,7 +42,6 @@ export const serviceCategories: ServiceCategory[] = [
     services: [
       { title: "Entretien régulier de bureaux", slug: "entretien-bureaux", image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600" },
       { title: "Locaux commerciaux", slug: "locaux-commerciaux", image: "https://images.unsplash.com/photo-1604328698692-f76ea9498e76?w=1600" },
-      { title: "Co-working spaces", slug: "co-working", image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1600" },
     ],
   },
   {
