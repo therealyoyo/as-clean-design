@@ -200,7 +200,7 @@ export const serviceContents: ServiceContent[] = [
       { question: "Que se passe-t-il si un voyageur laisse le logement en très mauvais état ?", answer: "Dans ce cas, nous vous contactons pour évaluer le temps supplémentaire nécessaire et ajuster la facturation en transparence. Pas de surprises." },
       { question: "Faites-vous du linge de lit et serviettes ?", answer: "Nous pouvons nous charger du changement et de la mise en place si vous fournissez le linge propre sur place. La prestation de blanchisserie externalisée est disponible sur demande." },
     ],
-    ctaText: "Gérez vos locations sans stress. Demandez un devis adapté à votre rythme — réponse sous 24h.",
+    ctaText: "Gérez vos locations sans stress. Demandez un devis adapté à votre rythme, réponse sous 24h.",
   },
   {
     slug: "apres-travaux",
