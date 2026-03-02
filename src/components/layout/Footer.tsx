@@ -59,8 +59,8 @@ export default function Footer() {
               </p>
               <p className="flex items-center gap-2">
                 <Mail className="h-4 w-4 shrink-0" />
-                <a href="mailto:info@ascleaning.be" className="hover:text-accent transition-colors">
-                  info@ascleaning.be
+                <a href="mailto:info@cleaning-as.be" className="hover:text-accent transition-colors">
+                  info@cleaning-as.be
                 </a>
               </p>
             </div>
