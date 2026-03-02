@@ -305,7 +305,7 @@ export const serviceContents: ServiceContent[] = [
 
   {
     slug: "locaux-commerciaux",
-    heroTitle: "Nettoyage de locaux commerciaux à Bruxelles",
+    heroTitle: "Nettoyage de locaux commerciaux",
     heroSubtitle: "L'image de votre commerce commence par la propreté de votre espace.",
     intro: "Boutique, showroom, agence, espace d'accueil : vos locaux commerciaux sont le premier contact visuel avec vos clients. Un espace impeccable renforce la confiance et valorise votre offre. A.S. Cleaning Services intervient dans vos locaux bruxellois avec un service adapté à votre secteur, votre fréquentation et vos horaires.",
     inclusions: [
