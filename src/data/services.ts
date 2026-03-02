@@ -140,7 +140,7 @@ export const serviceContents: ServiceContent[] = [
       "Nettoyage des radiateurs, plinthes et appuis de fenêtres",
     ],
     avantages: [
-      { title: "Conforme aux exigences d'état des lieux", description: "Nous connaissons les points de contrôle des états des lieux bruxellois. Notre nettoyage cible précisément les zones qui font l'objet d'un examen attentif." },
+      { title: "Conforme aux exigences d'état des lieux", description: "Nous connaissons les points de contrôle des états des lieux. Notre nettoyage cible précisément les zones qui font l'objet d'un examen attentif." },
       { title: "Attestation disponible sur demande", description: "Vous pouvez demander une attestation de passage à remettre à votre propriétaire ou à l'agence immobilière." },
       { title: "Disponibilité express", description: "Vous avez un délai court avant de remettre les clés ? Nous nous adaptons à vos impératifs, y compris en fin de semaine." },
     ],
@@ -149,7 +149,7 @@ export const serviceContents: ServiceContent[] = [
       { question: "Quand dois-je réserver l'intervention ?", answer: "Idéalement 3 à 5 jours avant la remise des clés. En cas d'urgence, nous acceptons des délais plus courts selon nos disponibilités — contactez-nous directement." },
       { question: "Intervenez-vous aussi pour les propriétaires avant une remise en location ?", answer: "Absolument. Nous proposons le même service pour les propriétaires souhaitant remettre un bien en parfait état entre deux locataires." },
     ],
-    ctaText: "Votre état des lieux approche ? Demandez votre devis dès maintenant — réponse sous 24h.",
+    ctaText: "Votre état des lieux approche ? Demandez votre devis dès maintenant, réponse sous 24h.",
   },
   {
     slug: "avant-apres-demenagement",
