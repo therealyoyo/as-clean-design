@@ -205,7 +205,7 @@ export const serviceContents: ServiceContent[] = [
   {
     slug: "apres-travaux",
     heroTitle: "Nettoyage après travaux",
-    heroSubtitle: "Vos travaux sont terminés. Notre travail commence — et vous pouvez enfin profiter de votre intérieur.",
+    heroSubtitle: "Vos travaux sont terminés. Notre travail commence et vous pouvez enfin profiter de votre intérieur.",
     intro: "Rénovation, peinture, carrelage, pose de parquet — chaque chantier laisse derrière lui une couche de poussière, de résidus et de salissures tenaces qui demandent bien plus qu'un simple coup de balai. Nos équipes sont équipées pour gérer le nettoyage post-travaux dans les logements bruxellois, quelle que soit l'ampleur du chantier.",
     inclusions: [
       "Élimination des poussières de plâtre, sciure et résidus de matériaux",
