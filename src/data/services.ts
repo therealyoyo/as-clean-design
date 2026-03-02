@@ -191,7 +191,7 @@ export const serviceContents: ServiceContent[] = [
       "Rapport de passage transmissible si souhaité",
     ],
     avantages: [
-      { title: "Cadencé sur vos check-in / check-out", description: "On s'intègre à votre calendrier de réservations. Vous nous communiquez vos créneaux, on assure le passage — sans que vous ayez à gérer chaque fois." },
+      { title: "Cadencé sur vos check-in / check-out", description: "On s'intègre à votre calendrier de réservations. Vous nous communiquez vos créneaux, on assure le passage, sans que vous ayez à gérer chaque fois." },
       { title: "Réactivité express", description: "Départ imprévu, check-in avancé ? Nous faisons notre possible pour nous adapter aux aléas de la location courte durée." },
       { title: "Protégez votre investissement", description: "Un logement systématiquement propre préserve vos équipements, votre note et la confiance de la plateforme." },
     ],
