@@ -180,7 +180,7 @@ export const serviceContents: ServiceContent[] = [
     slug: "airbnb",
     heroTitle: "Nettoyage Airbnb & locations courte durée",
     heroSubtitle: "5 étoiles à chaque départ, un nettoyage fiable qui protège votre note et votre réputation.",
-    intro: "Votre note Airbnb dépend en grande partie de la propreté perçue par vos voyageurs. Un entre-deux négligé suffit à faire plonger votre score. A.S. Cleaning Services propose un service dédié aux hôtes bruxellois : rapide, fiable, calé sur vos arrivées et départs — même en dernière minute.",
+    intro: "Votre note Airbnb ou Booking dépend en grande partie de la propreté perçue par vos voyageurs. Un entre-deux négligé suffit à faire plonger votre score. A.S. Cleaning Services propose un service dédié aux hôtes : rapide, fiable, calé sur vos arrivées et départs et ce même en dernière minute.",
     inclusions: [
       "Nettoyage complet du logement entre chaque voyageur",
       "Changement et mise en place du linge de lit (si fourni par l'hôte)",
