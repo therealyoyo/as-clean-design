@@ -109,11 +109,10 @@ export default function Index() {
               </h2>
               <p className="text-muted-foreground mb-4">
                 A.S. Cleaning Services est une entreprise de nettoyage professionnel
-                basée à Bruxelles, au service des particuliers et des professionnels
-                depuis notre création. Nous intervenons dans toutes les communes
-                bruxelloises et en périphérie.
+                basée à Saint-Gilles, au service des particuliers et des professionnels.
+                Nous intervenons dans les 19 communes bruxelloises et dans le Brabant Wallon.
               </p>
-              <p className="text-muted-foreground mb-6">Notre priorité : vous offrir un résultat impeccable, une communication claire et une flexibilité totale et ce que vous ayez besoin d'une intervention ponctuelle ou d'un entretien régulier.
+              <p className="text-muted-foreground mb-6">Notre priorité : vous offrir un résultat impeccable, une communication claire et une flexibilité totale, que vous ayez besoin d'une intervention ponctuelle ou d'un entretien régulier.
 
 
 

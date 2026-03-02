@@ -363,7 +363,7 @@ export default function Contact() {
                     <MapPin className="h-5 w-5 text-accent shrink-0" />
                     <div>
                       <p className="text-sm font-medium text-primary">Brabant Wallon</p>
-                      <p className="text-xs text-muted-foreground">et périphérie</p>
+                      <p className="text-xs text-muted-foreground">Wavre, Ottignies, Waterloo…</p>
                     </div>
                   </div>
                 </div>

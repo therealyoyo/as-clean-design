@@ -87,7 +87,7 @@ export default function Footer() {
               {serviceCategories.map((cat) => (
                 <li key={cat.slug}>
                   <Link
-                    to={`/services`}
+                    to={`/services/${cat.slug}`}
                     className="text-primary-foreground/70 hover:text-accent transition-colors"
                   >
                     {cat.title}

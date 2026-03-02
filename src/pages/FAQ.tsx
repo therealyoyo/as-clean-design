@@ -1,36 +1,57 @@
 /**
- * FAQ page — 5 sections matching service categories, 4 questions each.
- * Includes FAQPage JSON-LD schema.
+ * FAQ page — real content, no placeholders
  */
 import { useEffect } from "react";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { serviceCategories } from "@/data/services";
 import HeroSection from "@/components/sections/HeroSection";
 import CTABanner from "@/components/sections/CTABanner";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
-// Generate placeholder FAQ data
-const faqSections = serviceCategories.map((cat) => ({
-  title: cat.title,
-  questions: [1, 2, 3, 4].map((i) => ({
-    q: `Question ${i} sur ${cat.title.toLowerCase()} à compléter ?`,
-    a: `Réponse à compléter pour la question ${i} sur ${cat.title.toLowerCase()}.`,
-  })),
-}));
+const faqItems = [
+  {
+    q: "Dans quelles zones intervenez-vous ?",
+    a: "Nous intervenons dans les 19 communes de la Région bruxelloise ainsi que dans le Brabant Wallon. Pour toute demande en dehors de ces zones, contactez-nous directement et nous étudierons votre demande.",
+  },
+  {
+    q: "Comment obtenir un devis ?",
+    a: "Remplissez notre formulaire de contact en ligne ou appelez-nous au +32 460 97 65 45. Nous vous répondons sous 24h avec un devis personnalisé, gratuit et sans engagement.",
+  },
+  {
+    q: "Faut-il être présent lors de l'intervention ?",
+    a: "Non, votre présence n'est pas obligatoire. Nous gérons l'accès avec vous en amont et nos équipes travaillent en autonomie complète. Beaucoup de clients nous confient un accès et récupèrent un espace impeccable à leur retour.",
+  },
+  {
+    q: "Travaillez-vous le week-end ?",
+    a: "Oui, nous intervenons 7 jours sur 7 selon vos disponibilités. Les interventions le week-end sont planifiées lors de l'établissement du devis.",
+  },
+  {
+    q: "Proposez-vous des contrats d'entretien régulier ?",
+    a: "Oui. Nous proposons des prestations ponctuelles comme des contrats d'entretien régulier (quotidien, hebdomadaire, mensuel). La fréquence est définie ensemble selon vos besoins et votre budget.",
+  },
+  {
+    q: "Que se passe-t-il si je ne suis pas satisfait du résultat ?",
+    a: "Votre satisfaction est notre priorité. Si une intervention ne correspond pas à vos attentes, signalez-le nous et nous revenons pour corriger.",
+  },
+  {
+    q: "Vos équipes sont-elles assurées ?",
+    a: "Oui. A.S. Cleaning Services est couverte par une assurance en responsabilité civile professionnelle. Vous travaillez avec nous en toute sérénité.",
+  },
+  {
+    q: "Comment se passe la première intervention ?",
+    a: "Avant la première prestation, nous effectuons une visite ou un échange détaillé pour comprendre vos besoins, évaluer vos locaux et établir un devis précis. Rien n'est laissé au hasard.",
+  },
+];
 
 export default function FAQ() {
   // Inject FAQPage JSON-LD schema
   useEffect(() => {
-    const allQuestions = faqSections.flatMap((s) =>
-      s.questions.map((q) => ({
-        "@type": "Question",
-        name: q.q,
-        acceptedAnswer: { "@type": "Answer", text: q.a },
-      }))
-    );
     const schema = {
       "@context": "https://schema.org",
       "@type": "FAQPage",
-      mainEntity: allQuestions,
+      mainEntity: faqItems.map((item) => ({
+        "@type": "Question",
+        name: item.q,
+        acceptedAnswer: { "@type": "Answer", text: item.a },
+      })),
     };
     const script = document.createElement("script");
     script.type = "application/ld+json";
@@ -52,20 +73,15 @@ export default function FAQ() {
       />
 
       <section className="section-padding">
-        <div className="container mx-auto px-4 max-w-3xl space-y-12">
-          {faqSections.map((section) => (
-            <div key={section.title}>
-              <h2 className="text-xl font-bold text-primary mb-4">{section.title}</h2>
-              <Accordion type="single" collapsible>
-                {section.questions.map((q, i) => (
-                  <AccordionItem key={i} value={`${section.title}-${i}`}>
-                    <AccordionTrigger>{q.q}</AccordionTrigger>
-                    <AccordionContent>{q.a}</AccordionContent>
-                  </AccordionItem>
-                ))}
-              </Accordion>
-            </div>
-          ))}
+        <div className="container mx-auto px-4 max-w-3xl">
+          <Accordion type="single" collapsible>
+            {faqItems.map((item, i) => (
+              <AccordionItem key={i} value={`faq-${i}`}>
+                <AccordionTrigger>{item.q}</AccordionTrigger>
+                <AccordionContent>{item.a}</AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
         </div>
       </section>
 

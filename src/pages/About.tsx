@@ -57,7 +57,7 @@ const steps = [
 const communes = [
 "Anderlecht", "Auderghem", "Berchem-Sainte-Agathe", "Bruxelles-Ville",
 "Etterbeek", "Evere", "Forest", "Ganshoren", "Ixelles", "Jette",
-"Koekelberg", "Laeken", "Molenbeek", "Saint-Gilles", "Schaerbeek",
+"Koekelberg", "Molenbeek-Saint-Jean", "Saint-Gilles", "Saint-Josse-ten-Noode", "Schaerbeek",
 "Uccle", "Watermael-Boitsfort", "Woluwe-Saint-Lambert", "Woluwe-Saint-Pierre"];
 
 
@@ -134,7 +134,7 @@ export default function About() {
           <p className="text-lg font-semibold text-primary mb-4">Bruxelles et sa périphérie</p>
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
             Basés à Saint-Gilles, nous intervenons dans l'ensemble des 19 communes
-            bruxelloises ainsi qu'en Brabant wallon et flamand.
+            bruxelloises ainsi que dans le Brabant Wallon.
           </p>
           <div className="flex flex-wrap justify-center gap-2">
             {communes.map((commune) =>
@@ -143,7 +143,7 @@ export default function About() {
               </Badge>
             )}
             <Badge className="bg-accent text-accent-foreground text-sm px-3 py-1">
-              + périphérie
+              Brabant Wallon
             </Badge>
           </div>
         </div>
