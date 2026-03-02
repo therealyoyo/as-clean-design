@@ -253,6 +253,104 @@ export const serviceContents: ServiceContent[] = [
     ],
     ctaText: "Vitres ternes ? Demandez votre devis, on intervient dans toute la région bruxelloise et environs",
   },
+
+  {
+    slug: "entretien-bureaux",
+    heroTitle: "Entretien régulier de bureaux à Bruxelles",
+    heroSubtitle: "Un espace de travail propre chaque matin, sans que vous ayez à y penser.",
+    intro: "Un bureau propre inspire confiance à vos collaborateurs comme à vos clients. A.S. Cleaning Services prend en charge l'entretien régulier de vos locaux professionnels à Bruxelles : quotidien, hebdomadaire ou sur mesure. Vous définissez la fréquence, on assure le résultat.",
+    inclusions: [
+      "Aspiration et lavage de tous les types de sols (moquette, carrelage, parquet)",
+      "Dépoussiérage des bureaux, postes de travail et mobilier",
+      "Nettoyage et désinfection des sanitaires",
+      "Vidage des corbeilles et remplacement des sacs",
+      "Nettoyage des espaces communs (couloirs, salles de réunion, kitchenette)",
+      "Désinfection des surfaces à contact fréquent (poignées, interrupteurs, claviers sur demande)",
+      "Nettoyage des vitres intérieures et cloisons vitrées",
+    ],
+    avantages: [
+      {
+        title: "Un interlocuteur unique",
+        description: "Un seul contact suit votre dossier de bout en bout. Il connaît vos locaux, vos horaires et vos exigences. Vous n'expliquez jamais deux fois.",
+      },
+      {
+        title: "Intervention hors heures de bureau",
+        description: "Nos équipes interviennent avant votre ouverture, après votre fermeture ou le week-end selon ce qui perturbe le moins votre activité.",
+      },
+      {
+        title: "Fréquence ajustable",
+        description: "Vos besoins évoluent ? La fréquence et le périmètre de l'entretien s'ajustent sans renégocier un contrat entier.",
+      },
+    ],
+    faq: [
+      {
+        question: "Quelle est la fréquence minimale recommandée pour un bureau ?",
+        answer: "Pour un bureau occupé quotidiennement, nous recommandons un passage minimum 2 à 3 fois par semaine. Pour les espaces très fréquentés ou les open spaces, un passage quotidien est idéal. Nous adaptons la fréquence à votre budget et à votre usage réel.",
+      },
+      {
+        question: "Nos employés doivent-ils être présents lors du nettoyage ?",
+        answer: "Non. La grande majorité de nos interventions se font en dehors des heures de travail. Nous gérons l'accès avec vous en amont et nos équipes travaillent en autonomie complète.",
+      },
+      {
+        question: "Que se passe-t-il si nous ne sommes pas satisfaits d'un passage ?",
+        answer: "Vous nous le signalez et nous revenons pour corriger. Votre satisfaction à chaque intervention est notre engagement.",
+      },
+      {
+        question: "Travaillez-vous avec des petites structures ou uniquement des grandes entreprises ?",
+        answer: "Nous travaillons avec toutes les tailles de structures, d'un cabinet de 2 personnes à un open space de plusieurs centaines de m². Le devis est toujours adapté à votre réalité.",
+      },
+    ],
+    ctaText: "Demandez un devis pour l'entretien de vos bureaux. Un interlocuteur vous répond sous 24h.",
+  },
+
+  {
+    slug: "locaux-commerciaux",
+    heroTitle: "Nettoyage de locaux commerciaux à Bruxelles",
+    heroSubtitle: "L'image de votre commerce commence par la propreté de votre espace.",
+    intro: "Boutique, showroom, agence, espace d'accueil : vos locaux commerciaux sont le premier contact visuel avec vos clients. Un espace impeccable renforce la confiance et valorise votre offre. A.S. Cleaning Services intervient dans vos locaux bruxellois avec un service adapté à votre secteur, votre fréquentation et vos horaires.",
+    inclusions: [
+      "Nettoyage quotidien ou régulier des surfaces de vente et d'accueil",
+      "Lavage des vitrines et parois vitrées intérieures",
+      "Entretien des sols (carrelage, béton ciré, vinyle, moquette)",
+      "Désinfection des zones de caisse et surfaces à contact fréquent",
+      "Nettoyage des cabines d'essayage, vestiaires et sanitaires clients",
+      "Entretien des espaces de stockage et zones back-office",
+      "Gestion des déchets et remplacement des consommables",
+    ],
+    avantages: [
+      {
+        title: "Adapté à vos horaires d'ouverture",
+        description: "Nous intervenons avant l'ouverture ou après la fermeture pour que votre commerce soit impeccable à chaque début de journée sans perturber votre activité.",
+      },
+      {
+        title: "Une image soignée en permanence",
+        description: "Dans un espace commercial, la propreté est perçue instantanément par le client. Nos équipes maintiennent un niveau de présentation constant qui valorise votre enseigne.",
+      },
+      {
+        title: "Réactivité en cas d'imprévu",
+        description: "Événement de dernière minute, forte affluence, incident ? Contactez votre interlocuteur directement et nous organisons un passage supplémentaire dans les meilleurs délais.",
+      },
+    ],
+    faq: [
+      {
+        question: "Intervenez-vous aussi le dimanche pour les commerces ouverts 7j/7 ?",
+        answer: "Oui. Nous planifions les interventions en fonction de vos jours et horaires d'ouverture, y compris le dimanche et les jours fériés.",
+      },
+      {
+        question: "Pouvez-vous nettoyer les vitrines extérieures ?",
+        answer: "Le nettoyage des vitrines extérieures est inclus sur demande. Vous pouvez l'ajouter à votre contrat d'entretien régulier ou le commander en prestation ponctuelle.",
+      },
+      {
+        question: "Nous avons un sol spécifique (béton ciré, marbre, vinyle). Êtes-vous équipés ?",
+        answer: "Oui. Nos équipes sont formées au traitement des différents types de sols commerciaux. Nous précisons le type de revêtement lors de la visite initiale pour adapter les produits et techniques utilisés.",
+      },
+      {
+        question: "Que se passe-t-il si nous ne sommes pas satisfaits ?",
+        answer: "Vous nous le signalez et nous revenons pour corriger. Votre satisfaction est notre priorité à chaque passage.",
+      },
+    ],
+    ctaText: "Votre commerce mérite un entretien à la hauteur de votre image. Demandez un devis sous 24h.",
+  },
 ];
 
 /** Helper to find a service by category slug and service slug */
