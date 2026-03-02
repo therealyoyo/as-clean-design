@@ -13,7 +13,7 @@ import HeroSection from "@/components/sections/HeroSection";
 
 // Remplace ces deux valeurs après configuration
 const MAKE_WEBHOOK_URL = "MAKE_WEBHOOK_URL_PLACEHOLDER";
-const HCAPTCHA_SITE_KEY = "HCAPTCHA_SITE_KEY_PLACEHOLDER";
+const HCAPTCHA_SITE_KEY = "4dbafb40-cf86-4edc-bc8e-509eb564f330";
 
 const brusselsCommunes = [
   "Anderlecht", "Auderghem", "Berchem-Sainte-Agathe", "Bruxelles-Ville",
