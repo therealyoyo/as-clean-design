@@ -122,7 +122,7 @@ export const serviceContents: ServiceContent[] = [
       { question: "Le grand ménage inclut-il les vitres extérieures ?", answer: "Le grand ménage standard couvre les vitres intérieures. Le lavage des vitres extérieures est un service distinct que vous pouvez ajouter au même devis." },
       { question: "Quels produits utilisez-vous ?", answer: "Nos équipes utilisent des produits professionnels adaptés à chaque surface — efficaces sans abîmer vos matériaux. Si vous avez des contraintes spécifiques (allergies, matériaux délicats), signalez-le lors de votre demande de devis." },
     ],
-    ctaText: "Demandez un devis pour votre grand ménage — réponse sous 24h, sans engagement.",
+    ctaText: "Demandez un devis pour votre grand ménage - réponse sous 24h, sans engagement.",
   },
   {
     slug: "fin-de-bail",
