@@ -67,7 +67,7 @@ export default function About() {
       <HeroSection
         title="À propos de A.S. Cleaning Services"
         subtitle="Entreprise bruxelloise de nettoyage professionnel. Un seul interlocuteur, une qualité constante."
-        image="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1600" />
+        image="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1200&fm=webp&q=75" />
       
 
       {/* Company story */}

@@ -35,7 +35,7 @@ export default function Index() {
       <HeroSection
         title="Votre partenaire propreté à Bruxelles"
         subtitle="Services de nettoyage professionnels pour particuliers, bureaux et secteurs spécialisés."
-        image="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600"
+        image="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&fm=webp&q=75"
         secondaryCta={{ label: "Nos services", link: "/services" }} />
       
 
@@ -96,9 +96,11 @@ export default function Index() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="rounded-2xl overflow-hidden shadow-md">
               <img
-                src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800"
+                src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&fm=webp&q=75"
                 alt="Équipe A.S. Cleaning Services"
                 className="w-full h-64 md:h-72 object-cover"
+                width="800"
+                height="288"
                 loading="lazy" />
               
             </div>

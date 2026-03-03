@@ -69,7 +69,7 @@ export default function FAQ() {
       <HeroSection
         title="Foire aux questions"
         subtitle="Trouvez les réponses à vos questions les plus fréquentes."
-        image="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=1600"
+        image="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=1200&fm=webp&q=75"
       />
 
       <section className="section-padding">

@@ -11,7 +11,7 @@ export default function Zones() {
       <HeroSection
         title="Zones desservies"
         subtitle="A.S. Cleaning Services intervient à Bruxelles et dans le Brabant Wallon."
-        image="https://images.unsplash.com/photo-1559060092-17782223e1d0?w=1600"
+        image="https://images.unsplash.com/photo-1559060092-17782223e1d0?w=1200&fm=webp&q=75"
       />
 
       <section className="section-padding">

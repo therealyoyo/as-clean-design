@@ -32,7 +32,7 @@ export default function Services() {
       <HeroSection
         title="Nos services de nettoyage"
         subtitle="Découvrez l'ensemble de nos prestations adaptées à vos besoins."
-        image="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1600"
+        image="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1200&fm=webp&q=75"
       />
 
       <section className="section-padding">

@@ -140,7 +140,7 @@ export default function Contact() {
         <HeroSection
           title="Contactez-nous"
           subtitle="Demandez un devis gratuit ou posez-nous vos questions."
-          image="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1600"
+          image="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1200&fm=webp&q=75"
         />
 
         <section className="section-padding">
@@ -174,7 +174,7 @@ export default function Contact() {
       <HeroSection
         title="Contactez-nous"
         subtitle="Demandez un devis gratuit ou posez-nous vos questions."
-        image="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1600"
+        image="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1200&fm=webp&q=75"
       />
 
       <section className="section-padding">
