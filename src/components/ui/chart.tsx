@@ -67,6 +67,7 @@ const ChartStyle = ({ id, config }: { id: string; config: ChartConfig }) => {
 
   return (
     <style
+      // Safe: chart style content is generated internally, not from user input
       dangerouslySetInnerHTML={{
         __html: Object.entries(THEMES)
           .map(
