@@ -50,7 +50,7 @@ export default function Header() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden lg:flex items-center gap-1" ref={megaRef}>
+        <nav className="hidden lg:flex items-baseline gap-1" ref={megaRef}>
           {navItems.map((item) =>
             item.hasMega ? (
               <div key={item.label} className="relative">
