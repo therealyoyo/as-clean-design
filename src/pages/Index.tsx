@@ -50,16 +50,20 @@ export default function Index() {
             {serviceCategories.map((cat) => {
               const Icon = iconMap[cat.icon] || Layers;
               return (
-                <Card key={cat.slug} className="text-center hover:shadow-md transition-shadow">
-                  <CardContent className="pt-6">
+              <Card key={cat.slug} className="text-center hover:shadow-md transition-shadow flex flex-col">
+                  <CardContent className="pt-6 flex flex-col items-center flex-1">
                     <div className="mx-auto mb-4 bg-accent/10 w-14 h-14 rounded-full flex items-center justify-center">
                       <Icon className="h-7 w-7 text-accent" />
                     </div>
-                    <h3 className="font-semibold text-primary mb-2">{cat.title}</h3>
-                    <Link to={`/services/${cat.slug}`}>
-                      <Button variant="outline" size="sm" className="rounded-full border-accent text-accent hover:bg-accent hover:text-accent-foreground">
-                        Voir les services <ArrowRight className="h-4 w-4 ml-1" />
-                      </Button>
+                    <h3 className="font-semibold text-primary mb-4 flex-1 flex items-start justify-center">
+                      {cat.title}
+                    </h3>
+                    <Link
+                      to={`/services/${cat.slug}`}
+                      className="inline-flex items-center gap-1 text-sm font-medium text-accent hover:underline"
+                    >
+                      Voir les services
+                      <ArrowRight className="h-3 w-3" />
                     </Link>
                   </CardContent>
                 </Card>);
