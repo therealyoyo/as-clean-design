@@ -3,6 +3,7 @@
  */
 import { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
+import { usePageMeta } from "@/hooks/usePageMeta";
 import { Home, Building2, Briefcase, Sparkles, Layers, ArrowRight } from "lucide-react";
 import { serviceCategories } from "@/data/services";
 import HeroSection from "@/components/sections/HeroSection";
@@ -14,6 +15,15 @@ const iconMap: Record<string, React.ElementType> = {
 
 export default function Services() {
   const { category } = useParams();
+  const catData = category ? serviceCategories.find((c) => c.slug === category) : null;
+  usePageMeta({
+    title: catData
+      ? `${catData.title} à Bruxelles | A.S. Cleaning Services`
+      : "Nos services de nettoyage à Bruxelles | A.S. Cleaning Services",
+    description: catData
+      ? `${catData.description} Devis gratuit sous 24h. A.S. Cleaning Services, Saint-Gilles.`
+      : "Nettoyage de bureaux, logements et locaux à Bruxelles. Grand ménage, fin de bail, Airbnb, après travaux... Devis gratuit sous 24h.",
+  });
 
   useEffect(() => {
     if (category) {

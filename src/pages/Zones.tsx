@@ -4,8 +4,13 @@
 import { MapPin } from "lucide-react";
 import HeroSection from "@/components/sections/HeroSection";
 import CTABanner from "@/components/sections/CTABanner";
+import { usePageMeta } from "@/hooks/usePageMeta";
 
 export default function Zones() {
+  usePageMeta({
+    title: "Zones desservies | Nettoyage Bruxelles et environs | A.S. Cleaning Services",
+    description: "A.S. Cleaning Services intervient dans les 19 communes de Bruxelles et en Brabant Wallon. Nettoyage professionnel de bureaux et logements, disponible 7j/7.",
+  });
   return (
     <>
       <HeroSection

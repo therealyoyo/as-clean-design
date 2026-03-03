@@ -115,8 +115,13 @@ export default function Footer() {
 
       {/* Copyright */}
       <div className="border-t border-primary-foreground/10">
-        <div className="container mx-auto px-4 py-4 text-center text-sm text-primary-foreground/50">
-          © {new Date().getFullYear()} A.S. Cleaning Services. Tous droits réservés.
+        <div className="container mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-sm text-primary-foreground/50">
+          <span>© {new Date().getFullYear()} A.S. Cleaning Services. Tous droits réservés.</span>
+          <div className="flex gap-4">
+            <Link to="/mentions-legales" className="hover:text-accent transition-colors">Mentions légales</Link>
+            <Link to="/politique-de-confidentialite" className="hover:text-accent transition-colors">Confidentialité</Link>
+            <Link to="/politique-cookies" className="hover:text-accent transition-colors">Cookies</Link>
+          </div>
         </div>
       </div>
     </footer>

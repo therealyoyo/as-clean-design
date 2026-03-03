@@ -8,8 +8,10 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { CheckCircle, Phone, MessageCircle, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 import { getAllServices } from "@/data/services";
 import HeroSection from "@/components/sections/HeroSection";
+import { usePageMeta } from "@/hooks/usePageMeta";
 
 // Remplace ces deux valeurs après configuration
 const MAKE_WEBHOOK_URL = "https://hook.eu1.make.com/n3j1ew7rl4a1dqfrsuhiec1mzcdtz6av";
@@ -25,6 +27,10 @@ const brusselsCommunes = [
 type FormStatus = "idle" | "sending" | "success" | "error";
 
 export default function Contact() {
+  usePageMeta({
+    title: "Contact & Devis gratuit | A.S. Cleaning Services Bruxelles",
+    description: "Demandez votre devis nettoyage gratuit et sans engagement. Réponse sous 24h. Tél. : +32 460 97 65 45. A.S. Cleaning Services, Saint-Gilles, Bruxelles.",
+  });
   const allServices = getAllServices();
   const captchaRef = useRef<HCaptcha | null>(null);
 
@@ -40,6 +46,7 @@ export default function Contact() {
     message: "",
   });
 
+  const [rgpdConsent, setRgpdConsent] = useState(false);
   const [captchaToken, setCaptchaToken] = useState<string | null>(null);
   const [status, setStatus] = useState<FormStatus>("idle");
 
@@ -96,6 +103,7 @@ export default function Contact() {
     form.nom.trim() !== "" &&
     form.email.trim() !== "" &&
     form.service.trim() !== "" &&
+    rgpdConsent &&
     captchaToken !== null;
 
   async function handleSubmit() {
@@ -285,6 +293,24 @@ export default function Contact() {
                   value={form.message}
                   onChange={(e) => handleChange("message", e.target.value)}
                 />
+              </div>
+
+              <div className="flex items-start gap-3">
+                <input
+                  type="checkbox"
+                  id="rgpd-consent"
+                  checked={rgpdConsent}
+                  onChange={(e) => setRgpdConsent(e.target.checked)}
+                  className="mt-1 h-4 w-4 shrink-0 cursor-pointer"
+                />
+                <label htmlFor="rgpd-consent" className="text-sm text-muted-foreground cursor-pointer">
+                  J'accepte que mes données soient traitées dans le cadre de ma demande de devis,
+                  conformément à la{" "}
+                  <Link to="/politique-de-confidentialite" className="text-accent hover:underline">
+                    politique de confidentialité
+                  </Link>
+                  . *
+                </label>
               </div>
 
               <div>

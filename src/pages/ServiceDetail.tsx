@@ -10,6 +10,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { findService, getRelatedServices, serviceContents } from "@/data/services";
 import HeroSection from "@/components/sections/HeroSection";
 import CTABanner from "@/components/sections/CTABanner";
+import { usePageMeta } from "@/hooks/usePageMeta";
 
 const engagements = [
   {
@@ -34,6 +35,17 @@ const avantageIcons = [Shield, Star, Clock];
 export default function ServiceDetail() {
   const { category, service } = useParams<{ category: string; service: string }>();
   const result = findService(category || "", service || "");
+  const metaContent = result ? serviceContents.find((c) => c.slug === result.service.slug) ?? null : null;
+  usePageMeta({
+    title: result
+      ? `${metaContent?.heroTitle ?? result.service.title} à Bruxelles | A.S. Cleaning Services`
+      : "Services de nettoyage | A.S. Cleaning Services",
+    description: result
+      ? metaContent?.intro
+        ? metaContent.intro.slice(0, 155)
+        : `${result.service.title} professionnel à Bruxelles. Devis gratuit sous 24h. A.S. Cleaning Services.`
+      : "Services de nettoyage professionnels à Bruxelles.",
+  });
 
   if (!result) return <Navigate to="/services" replace />;
 

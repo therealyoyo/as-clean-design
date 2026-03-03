@@ -9,6 +9,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import HeroSection from "@/components/sections/HeroSection";
 import CTABanner from "@/components/sections/CTABanner";
+import { usePageMeta } from "@/hooks/usePageMeta";
 
 const values = [
 {
@@ -62,6 +63,10 @@ const communes = [
 
 
 export default function About() {
+  usePageMeta({
+    title: "À propos | A.S. Cleaning Services - Nettoyage Bruxelles",
+    description: "Découvrez A.S. Cleaning Services, société de nettoyage basée à Saint-Gilles, Bruxelles. Équipe sélectionnée, formée et assurée pour tous vos besoins de nettoyage.",
+  });
   return (
     <>
       <HeroSection

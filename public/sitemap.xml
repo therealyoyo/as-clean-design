@@ -176,4 +176,25 @@
     <priority>0.5</priority>
   </url>
 
+  <url>
+    <loc>https://cleaning-as.be/mentions-legales</loc>
+    <lastmod>2026-03-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://cleaning-as.be/politique-de-confidentialite</loc>
+    <lastmod>2026-03-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://cleaning-as.be/politique-cookies</loc>
+    <lastmod>2026-03-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
 </urlset>

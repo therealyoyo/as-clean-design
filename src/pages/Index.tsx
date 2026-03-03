@@ -10,6 +10,7 @@ import { serviceCategories } from "@/data/services";
 import HeroSection from "@/components/sections/HeroSection";
 import TrustBar from "@/components/sections/TrustBar";
 import CTABanner from "@/components/sections/CTABanner";
+import { usePageMeta } from "@/hooks/usePageMeta";
 
 // Map category icon names to components
 const iconMap: Record<string, React.ElementType> = {
@@ -22,13 +23,12 @@ const steps = [
 { icon: CheckCircle, title: "Résultat impeccable", description: "Profitez d'un espace propre et sain." }];
 
 
-const testimonials = [
-{ name: "Marie D.", commune: "Ixelles", text: "Service impeccable, je recommande vivement !" },
-{ name: "Pierre L.", commune: "Uccle", text: "Équipe très professionnelle et ponctuelle." },
-{ name: "Sophie M.", commune: "Etterbeek", text: "Excellent rapport qualité-prix." }];
-
 
 export default function Index() {
+  usePageMeta({
+    title: "Société de nettoyage professionnelle à Bruxelles | A.S. Cleaning Services",
+    description: "A.S. Cleaning Services : nettoyage de bureaux, logements et locaux commerciaux à Bruxelles. Devis gratuit sous 24h. Équipes assurées, disponibles 7j/7.",
+  });
   return (
     <>
       {/* Hero */}
@@ -138,29 +138,6 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="section-padding">
-        <div className="container mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-primary text-center mb-10">Ce que disent nos clients</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {testimonials.map((t, i) =>
-            <Card key={i}>
-                <CardContent className="pt-6">
-                  <div className="flex gap-1 mb-3">
-                    {[...Array(5)].map((_, j) =>
-                  <Star key={j} className="h-4 w-4 fill-accent text-accent" />
-                  )}
-                  </div>
-                  <p className="text-sm text-muted-foreground mb-4">"{t.text}"</p>
-                  <p className="font-semibold text-primary text-sm">{t.name}</p>
-                  <p className="text-xs text-muted-foreground">{t.commune}</p>
-                </CardContent>
-              </Card>
-            )}
-          </div>
-        </div>
-      </section>
-
       {/* Coverage section */}
       <section className="section-padding bg-secondary">
         <div className="container mx-auto px-4 text-center">
@@ -192,9 +169,10 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Google Reviews */}
+      {/* Reviews */}
       <section className="section-padding">
         <div className="container mx-auto px-4">
+          <h2 className="text-2xl md:text-3xl font-bold text-primary text-center mb-6">Ce que disent nos clients</h2>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-10">
             <div className="flex items-center gap-2">
               <svg className="h-6 w-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

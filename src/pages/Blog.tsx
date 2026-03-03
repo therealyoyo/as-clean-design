@@ -6,6 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import HeroSection from "@/components/sections/HeroSection";
+import { usePageMeta } from "@/hooks/usePageMeta";
 
 const articles = [
   { title: "Titre de l'article 1 à compléter", category: "Conseils", date: "01/01/2025", image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&fm=webp&q=75" },
@@ -17,6 +18,10 @@ const articles = [
 ];
 
 export default function Blog() {
+  usePageMeta({
+    title: "Blog - Conseils & guides nettoyage | A.S. Cleaning Services",
+    description: "Conseils pratiques, guides et actualités sur le nettoyage professionnel à Bruxelles. Retrouvez tous nos articles sur l'entretien de bureaux, logements et locaux.",
+  });
   return (
     <>
       <HeroSection

@@ -3,6 +3,7 @@
  */
 import { useEffect } from "react";
 import HeroSection from "@/components/sections/HeroSection";
+import { usePageMeta } from "@/hooks/usePageMeta";
 import CTABanner from "@/components/sections/CTABanner";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
@@ -42,6 +43,10 @@ const faqItems = [
 ];
 
 export default function FAQ() {
+  usePageMeta({
+    title: "FAQ - Questions fréquentes | A.S. Cleaning Services",
+    description: "Vos questions sur nos services de nettoyage à Bruxelles : tarifs, délais, zones desservies, produits utilisés. Consultez notre FAQ ou demandez un devis gratuit.",
+  });
   // Inject FAQPage JSON-LD schema
   useEffect(() => {
     const schema = {
