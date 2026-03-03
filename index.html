@@ -1,28 +1,180 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- TODO: Set the document title to the name of your application -->
     <title>A.S. Cleaning Services — Nettoyage professionnel à Bruxelles</title>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="canonical" href="https://cleaning-as.be/" />
+    <link rel="alternate" hreflang="fr-BE" href="https://cleaning-as.be/" />
+
     <meta name="description" content="A.S. Cleaning Services, entreprise de nettoyage professionnel à Bruxelles et Brabant Wallon. Particuliers, bureaux et secteurs spécialisés. Devis gratuit sous 24h." />
-    <meta name="author" content="Lovable" />
+    <meta name="author" content="A.S. Cleaning Services" />
 
-    <!-- TODO: Update og:title to match your application name -->
-    
-    
+    <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="/logo.png" />
+    <meta property="og:url" content="https://cleaning-as.be/" />
+    <meta property="og:site_name" content="A.S. Cleaning Services" />
+    <meta property="og:title" content="A.S. Cleaning Services — Nettoyage professionnel à Bruxelles" />
+    <meta property="og:description" content="Entreprise de nettoyage professionnel à Bruxelles et Brabant Wallon. Services pour particuliers, bureaux et secteurs spécialisés. Devis gratuit sous 24h." />
+    <meta property="og:image" content="https://cleaning-as.be/logo.png" />
+    <meta property="og:locale" content="fr_BE" />
 
+    <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@Lovable" />
-    <meta name="twitter:image" content="/logo.png" />
+    <meta name="twitter:title" content="A.S. Cleaning Services — Nettoyage professionnel à Bruxelles" />
+    <meta name="twitter:description" content="Entreprise de nettoyage professionnel à Bruxelles et Brabant Wallon. Devis gratuit sous 24h." />
+    <meta name="twitter:image" content="https://cleaning-as.be/logo.png" />
+
+    <!-- Structured Data: LocalBusiness + WebSite + FAQPage + AggregateRating -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": ["LocalBusiness", "ProfessionalService"],
+          "@id": "https://cleaning-as.be/#business",
+          "name": "A.S. Cleaning Services",
+          "description": "Entreprise de nettoyage professionnel à Bruxelles et Brabant Wallon. Services pour particuliers, bureaux et secteurs spécialisés.",
+          "url": "https://cleaning-as.be",
+          "telephone": "+32460976545",
+          "image": "https://cleaning-as.be/logo.png",
+          "priceRange": "€€",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Saint-Gilles",
+            "addressLocality": "Bruxelles",
+            "addressRegion": "Région de Bruxelles-Capitale",
+            "postalCode": "1060",
+            "addressCountry": "BE"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 50.827,
+            "longitude": 4.3476
+          },
+          "areaServed": [
+            { "@type": "City", "name": "Bruxelles" },
+            { "@type": "AdministrativeArea", "name": "Brabant Wallon" }
+          ],
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+            "opens": "07:00",
+            "closes": "20:00"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "reviewCount": "3",
+            "bestRating": "5",
+            "worstRating": "1"
+          },
+          "review": [
+            {
+              "@type": "Review",
+              "author": { "@type": "Person", "name": "Gatien Bienfait" },
+              "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+              "reviewBody": "Nickel, Satisfait des services !"
+            },
+            {
+              "@type": "Review",
+              "author": { "@type": "Person", "name": "Clement Chevalier" },
+              "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+              "reviewBody": "Excellente société de nettoyage ! Service sérieux, efficace et très professionnel. La communication est claire, les délais sont respectés et le travail est réalisé avec beaucoup de soin. Entreprise fiable et réactive, je recommande sans hésiter."
+            },
+            {
+              "@type": "Review",
+              "author": { "@type": "Person", "name": "Camylle Simon" },
+              "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+              "reviewBody": "Nous faisons appel à ce service de nettoyage pour l'entretien régulier de nos bureaux à Forest et nous en sommes très satisfaits. L'équipe est ponctuelle, professionnelle et travaille avec soin. Les locaux sont toujours impeccables après chaque passage."
+            }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://cleaning-as.be/#website",
+          "url": "https://cleaning-as.be",
+          "name": "A.S. Cleaning Services",
+          "description": "Nettoyage professionnel à Bruxelles et Brabant Wallon",
+          "inLanguage": "fr-BE",
+          "publisher": { "@id": "https://cleaning-as.be/#business" }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://cleaning-as.be/faq#faqpage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Dans quelles zones intervenez-vous ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Nous intervenons dans les 19 communes de la Région bruxelloise ainsi que dans le Brabant Wallon. Pour toute demande en dehors de ces zones, contactez-nous directement et nous étudierons votre demande."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Comment obtenir un devis ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Remplissez notre formulaire de contact en ligne ou appelez-nous au +32 460 97 65 45. Nous vous répondons sous 24h avec un devis personnalisé, gratuit et sans engagement."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Faut-il être présent lors de l'intervention ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Non, votre présence n'est pas obligatoire. Nous gérons l'accès avec vous en amont et nos équipes travaillent en autonomie complète. Beaucoup de clients nous confient un accès et récupèrent un espace impeccable à leur retour."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Travaillez-vous le week-end ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Oui, nous intervenons 7 jours sur 7 selon vos disponibilités. Les interventions le week-end sont planifiées lors de l'établissement du devis."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Proposez-vous des contrats d'entretien régulier ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Oui. Nous proposons des prestations ponctuelles comme des contrats d'entretien régulier (quotidien, hebdomadaire, mensuel). La fréquence est définie ensemble selon vos besoins et votre budget."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Vos équipes sont-elles assurées ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Oui. A.S. Cleaning Services est couverte par une assurance en responsabilité civile professionnelle. Vous travaillez avec nous en toute sérénité."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Que se passe-t-il si je ne suis pas satisfait du résultat ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Votre satisfaction est notre priorité. Si une intervention ne correspond pas à vos attentes, signalez-le nous et nous revenons pour corriger."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Comment se passe la première intervention ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Avant la première prestation, nous effectuons une visite ou un échange détaillé pour comprendre vos besoins, évaluer vos locaux et établir un devis précis. Rien n'est laissé au hasard."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
     <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
-    <meta property="og:title" content="A.S. Cleaning Services — Nettoyage professionnel à Bruxelles">
-  <meta name="twitter:title" content="A.S. Cleaning Services — Nettoyage professionnel à Bruxelles">
-  <meta property="og:description" content="Services de nettoyage professionnels à Bruxelles et Brabant Wallon.">
-  <meta name="twitter:description" content="Services de nettoyage professionnels à Bruxelles et Brabant Wallon.">
 </head>
 
   <body>
