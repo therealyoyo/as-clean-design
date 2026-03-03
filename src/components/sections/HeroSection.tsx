@@ -33,8 +33,8 @@ export default function HeroSection({
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-primary-foreground py-20">
-        <h1 className="text-3xl md:text-5xl font-bold mb-4">{title}</h1>
-        {subtitle && <p className="text-lg md:text-xl mb-8 text-primary-foreground/80 max-w-2xl mx-auto">{subtitle}</p>}
+        <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 px-2">{title}</h1>
+        {subtitle && <p className="text-base sm:text-lg md:text-xl mb-8 text-primary-foreground/80 max-w-2xl mx-auto px-2">{subtitle}</p>}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link to={ctaLink}>
             <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 rounded-full px-8">

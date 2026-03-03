@@ -1,7 +1,8 @@
 /**
  * Services hub page — displays all 5 categories with links to sub-services.
  */
-import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { Link, useParams } from "react-router-dom";
 import { Home, Building2, Briefcase, Sparkles, Layers, ArrowRight } from "lucide-react";
 import { serviceCategories } from "@/data/services";
 import HeroSection from "@/components/sections/HeroSection";
@@ -12,6 +13,20 @@ const iconMap: Record<string, React.ElementType> = {
 };
 
 export default function Services() {
+  const { category } = useParams();
+
+  useEffect(() => {
+    if (category) {
+      const el = document.getElementById(category);
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 100);
+      }
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }, [category]);
   return (
     <>
       <HeroSection
@@ -25,7 +40,7 @@ export default function Services() {
           {serviceCategories.map((cat) => {
             const Icon = iconMap[cat.icon] || Layers;
             return (
-              <div key={cat.slug}>
+              <div key={cat.slug} id={cat.slug}>
                 <div className="flex items-center gap-3 mb-6">
                   <div className="bg-accent/10 p-3 rounded-full">
                     <Icon className="h-6 w-6 text-accent" />
