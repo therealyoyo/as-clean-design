@@ -46,7 +46,7 @@ export default function Header() {
       <div className="container mx-auto flex items-center justify-between h-24 md:h-28 px-4">
         {/* Logo */}
         <Link to="/" className="shrink-0">
-          <img src="/logo.png" alt="A.S. Cleaning Services" className="h-20 md:h-24 w-auto" />
+          <img src="/logo.png" alt="A.S. Cleaning Services" className="h-14 md:h-18 w-auto" />
         </Link>
 
         {/* Desktop Navigation */}
