@@ -3,7 +3,7 @@
  * Sections: Hero, Trust bar, Services grid, How it works, Testimonials, Coverage, CTA banner
  */
 import { Link } from "react-router-dom";
-import { Home, Building2, Briefcase, Sparkles, Layers, ClipboardList, CalendarCheck, CheckCircle, Star, MapPin } from "lucide-react";
+import { Home, Building2, Briefcase, Sparkles, Layers, ClipboardList, CalendarCheck, CheckCircle, Star, MapPin, ArrowRight } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { serviceCategories } from "@/data/services";
@@ -46,7 +46,7 @@ export default function Index() {
       <section className="section-padding">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-primary text-center mb-10">Nos services</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 max-w-5xl mx-auto">
             {serviceCategories.map((cat) => {
               const Icon = iconMap[cat.icon] || Layers;
               return (
@@ -56,15 +56,13 @@ export default function Index() {
                       <Icon className="h-7 w-7 text-accent" />
                     </div>
                     <h3 className="font-semibold text-primary mb-2">{cat.title}</h3>
-                    <Link
-                      to={`/services/${cat.slug}`}
-                      className="text-sm text-accent hover:underline">
-                      
-                      Voir les services →
+                    <Link to={`/services/${cat.slug}`}>
+                      <Button variant="outline" size="sm" className="rounded-full border-accent text-accent hover:bg-accent hover:text-accent-foreground">
+                        Voir les services <ArrowRight className="h-4 w-4 ml-1" />
+                      </Button>
                     </Link>
                   </CardContent>
                 </Card>);
-
             })}
           </div>
         </div>
@@ -96,7 +94,7 @@ export default function Index() {
               <img
                 src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800"
                 alt="Équipe A.S. Cleaning Services"
-                className="w-full h-72 object-cover"
+                className="w-full h-64 md:h-72 object-cover"
                 loading="lazy" />
               
             </div>
@@ -164,7 +162,7 @@ export default function Index() {
           <p className="text-muted-foreground mb-8">
             Nous intervenons à Bruxelles et dans le Brabant Wallon.
           </p>
-          <div className="flex justify-center gap-8">
+          <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-8">
             <div className="flex items-center gap-3">
               <MapPin className="h-6 w-6 text-accent shrink-0" />
               <div className="text-left">
