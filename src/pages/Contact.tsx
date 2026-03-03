@@ -102,7 +102,11 @@ export default function Contact() {
     form.prenom.trim() !== "" &&
     form.nom.trim() !== "" &&
     form.email.trim() !== "" &&
+    form.telephone.trim() !== "" &&
     form.service.trim() !== "" &&
+    form.rue.trim() !== "" &&
+    form.codePostal.trim() !== "" &&
+    form.ville.trim() !== "" &&
     rgpdConsent &&
     captchaToken !== null;
 
@@ -223,7 +227,7 @@ export default function Contact() {
                   />
                 </div>
                 <div>
-                  <label className="text-sm font-medium text-foreground mb-1.5 block">Téléphone</label>
+                  <label className="text-sm font-medium text-foreground mb-1.5 block">Téléphone *</label>
                   <Input
                     type="tel"
                     placeholder="+32 000 000 000"
@@ -253,7 +257,7 @@ export default function Contact() {
               </div>
 
               <div>
-                <label className="text-sm font-medium text-foreground mb-1.5 block">Rue et numéro</label>
+                <label className="text-sm font-medium text-foreground mb-1.5 block">Rue et numéro *</label>
                 <Input
                   placeholder="Ex: Rue de la Loi 42"
                   value={form.rue}
@@ -263,7 +267,7 @@ export default function Contact() {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="space-y-2">
-                  <label className="text-sm font-medium text-foreground mb-1.5 block">Code postal</label>
+                  <label className="text-sm font-medium text-foreground mb-1.5 block">Code postal *</label>
                   <Input
                     placeholder="1000"
                     value={form.codePostal}
@@ -271,7 +275,7 @@ export default function Contact() {
                   />
                 </div>
                 <div className="space-y-2">
-                  <label className="text-sm font-medium text-foreground mb-1.5 block">Ville / Commune</label>
+                  <label className="text-sm font-medium text-foreground mb-1.5 block">Ville / Commune *</label>
                   <Input
                     placeholder="Ex : Ixelles, Forest, Uccle..."
                     value={form.ville}
