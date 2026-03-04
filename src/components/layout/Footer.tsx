@@ -45,7 +45,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company info */}
           <div>
-            <h3 className="font-bold text-lg mb-4">A.S. Cleaning Services</h3>
+            <img src="/logo.png" alt="A.S. Cleaning Services" className="h-12 w-auto mb-4 brightness-0 invert" />
             <div className="space-y-2 text-sm text-primary-foreground/70">
               <p className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 mt-0.5 shrink-0" />
