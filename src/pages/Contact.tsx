@@ -26,6 +26,17 @@ const brusselsCommunes = [
 
 type FormStatus = "idle" | "sending" | "success" | "error";
 
+function isValidEmail(email: string): boolean {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email.trim());
+}
+
+function isValidPhone(phone: string): boolean {
+  // Strip spaces, dashes, dots
+  const digits = phone.replace(/[\s.\-()]/g, "");
+  // Belgian mobile (+32 4xx or 04xx) or landline (+32 x or 0x)
+  return /^(\+32|0032)[1-9]\d{7,8}$/.test(digits) || /^0[1-9]\d{7,8}$/.test(digits);
+}
+
 export default function Contact() {
   usePageMeta({
     title: "Contact & Devis gratuit | A.S. Cleaning Services Bruxelles",
@@ -49,6 +60,7 @@ export default function Contact() {
   const [rgpdConsent, setRgpdConsent] = useState(false);
   const [captchaToken, setCaptchaToken] = useState<string | null>(null);
   const [status, setStatus] = useState<FormStatus>("idle");
+  const [touched, setTouched] = useState({ email: false, telephone: false });
 
   function handleChange(field: string, value: string) {
     setForm((prev) => ({ ...prev, [field]: value }));
@@ -101,8 +113,8 @@ export default function Contact() {
   const isFormValid =
     form.prenom.trim() !== "" &&
     form.nom.trim() !== "" &&
-    form.email.trim() !== "" &&
-    form.telephone.trim() !== "" &&
+    isValidEmail(form.email) &&
+    isValidPhone(form.telephone) &&
     form.service.trim() !== "" &&
     form.rue.trim() !== "" &&
     form.codePostal.trim() !== "" &&
@@ -111,6 +123,7 @@ export default function Contact() {
     captchaToken !== null;
 
   async function handleSubmit() {
+    setTouched({ email: true, telephone: true });
     if (!isFormValid) return;
 
     setStatus("sending");
@@ -224,16 +237,26 @@ export default function Contact() {
                     placeholder="votre@email.com"
                     value={form.email}
                     onChange={(e) => handleChange("email", e.target.value)}
+                    onBlur={() => setTouched((t) => ({ ...t, email: true }))}
+                    className={touched.email && !isValidEmail(form.email) ? "border-destructive" : ""}
                   />
+                  {touched.email && !isValidEmail(form.email) && (
+                    <p className="text-xs text-destructive mt-1">Veuillez entrer une adresse email valide.</p>
+                  )}
                 </div>
                 <div>
                   <label className="text-sm font-medium text-foreground mb-1.5 block">Téléphone *</label>
                   <Input
                     type="tel"
-                    placeholder="+32 000 000 000"
+                    placeholder="+32 460 97 65 45"
                     value={form.telephone}
                     onChange={(e) => handleChange("telephone", e.target.value)}
+                    onBlur={() => setTouched((t) => ({ ...t, telephone: true }))}
+                    className={touched.telephone && !isValidPhone(form.telephone) ? "border-destructive" : ""}
                   />
+                  {touched.telephone && !isValidPhone(form.telephone) && (
+                    <p className="text-xs text-destructive mt-1">Veuillez entrer un numéro de téléphone belge valide (ex : +32 460 97 65 45).</p>
+                  )}
                 </div>
               </div>
 
